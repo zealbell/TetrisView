@@ -100,7 +100,7 @@ This Library consists of two Major views:
    **tetris** has topMargin in terms of number-of-blocks equal-to **0**(hence Y=0) **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
 
 
-##Activity
+###Activity
 
   - Incase you want to change the Tetris @runtime in your Activity here's how
 ```java
@@ -150,14 +150,14 @@ Here is a complex shape TetrisView containing an imageview
               </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
 
-    in case you were wondering why the 'topMargin in terms of number-of-blocks' was needed, this example explicitly
-    indicates why. the only special thing added here is the '~' found in the tetris-attribute value, which indicates
-    separation between each tetris-types to be fused together as a single shape for the TetrisView i.e. the example
-    above is made up of a horizontal-tetris + vertical-tetris + horizontal-tetris and to expantiate the first tetris-type(horizontal-tetris)
-    is 2blocks wide(i.e. 2x25% wide), the second is 3blocks tall(i.e. 3x25% tall) and the last is 1block wide(i.e. 1x25% wide).
-    confused??? => take a quick glance above.
+in case you were wondering why the 'topMargin in terms of number-of-blocks' was needed, this example explicitly
+indicates why. the only special thing added here is the '~' found in the tetris-attribute value, which indicates
+separation between each tetris-types to be fused together as a single shape for the TetrisView i.e. the example
+above is made up of a horizontal-tetris + vertical-tetris + horizontal-tetris and to expantiate the first tetris-type(horizontal-tetris)
+is 2blocks wide(i.e. 2x25% wide), the second is 3blocks tall(i.e. 3x25% tall) and the last is 1block wide(i.e. 1x25% wide).
+confused??? => take a quick glance above.
 
-          Here is Another one
+         - Here is Another one
 ![Demo](shots/complex-shape-tetris1.png)
 ```xml
                        <linkersoft.blackpanther.blacktetris.TetrisView
@@ -179,12 +179,12 @@ Here is a complex shape TetrisView containing an imageview
                            </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
 ![Demo](shots/complex-shape-tetris2.png)
-           Another one
+          - Another one
 ```xml
   app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"
 ```
 ![Demo](shots/complex-shape-tetris3.png)
-           Another one
+          - Another one
 ```xml
    [horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0
 ```
