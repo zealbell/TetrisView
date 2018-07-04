@@ -198,9 +198,9 @@ confused??? => take a quick glance above.
 
 ![Demo](shots/complex-arrangement-tetris.png)
 
-         that's where the TetrisClick(ViewGroup$FrameLayout) comes in. so that the clicks are handled correctly for TetrisViews whose bounding
-         rectangles/boxes overlap also for positioning too.
-              Have Another one(*_*):
+that's where the **TetrisClick(ViewGroup$FrameLayout)** comes in. so that the clicks are handled correctly for TetrisViews
+whose bounding rectangles/boxes overlap also for positioning too.
+     - Have Another one(*_*):
                
 ```xml
                <linkersoft.blackpanther.blacktetris.TetrisClicker
@@ -312,27 +312,29 @@ confused??? => take a quick glance above.
                
 ```
 
-#NOTE
+##NOTE
 
 ```xml
     app:GlobalWidth="200dp"
     app:percentWidth="100%"
     app:percentHeight="100%"
-``` at
+```
+at
 ```xml <...TetrisClicker>...</...>
 ```
    specifies the GlobalDimension for the TetrisClicker to be 200dp
    and the Width of the TetrisClicker = 100% of 200dp,
    Height of the TetrisClicker = 100% of 200dp
 
-#ALSO
+##ALSO
    Automatically any TetrisView placed in the TetrisClicker inherits the GlobalHeight as it's
    unit reference dimension instead of the screen-width of the device hence
 ```xml
    app:unit="25%"
    app:percentMarginTop="50%"
    app:percentMarginLeft="75%"
-``` at any
+```
+at any
 ```xml <...TetrisView>...</...>
 ```
    specifies that unit = 25% of 200dp(TetrisClicker's GlobalWidth)
