@@ -77,18 +77,18 @@ This Library consists of two Major views:
     
     </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
-**#XML Attributes Syntax**
+**XML Attributes Syntax**
 ```xml
     unit:"the percentage of the screen-width(p.o.sw) for each block that makes up the tetris"
     radius:"radius of your choice in dp/px"
     tetris: "[name-of-tetris:left-pad,top-pad,right-pad,bottom-pad]number-of-blocks#topMargin in terms of number-of-blocks"
 ``
 
-**#XML Attributes Butchered in details**
+**XML Attributes Butchered in details**
   name-of-tetris => can either be 'vert-tetris' or 'horz-tetris' since tetris components can either be classified horizontal or vertical
   padd => the padds take the dimension of the radius(dp/px) hence only numeric values are required
   tetris => can be have more than a combination of vertical and horizontal tetrises(see below).
-*thus*
+  *thus*
 ```xml
      app:radius="4dp"
      app:tetris="[vert-tetris:4,2,2,2]2#0"
