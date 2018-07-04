@@ -46,8 +46,6 @@ public class TetrisView extends FrameLayout {
         TypedArray tetrissa =context.getTheme().obtainStyledAttributes(attrs, R.styleable.TetrisView, 0, 0);
         try{ setTetris(tetrissa.getString(R.styleable.TetrisView_percentMarginLeft),
                        tetrissa.getString(R.styleable.TetrisView_percentMarginTop),
-                       tetrissa.getString(R.styleable.TetrisView_percentMarginRight),
-                       tetrissa.getString(R.styleable.TetrisView_percentMarginBottom),
                        tetrissa.getBoolean(R.styleable.TetrisView_paddDistortion,false),
                        tetrissa.getString(R.styleable.TetrisView_tetris),
                        tetrissa.getString(R.styleable.TetrisView_unit),
@@ -155,7 +153,7 @@ public class TetrisView extends FrameLayout {
         inY=height;
         CurvifyShapes(WeldShapes(TetrisList),radius);
     }
-    private void setTetris(String pMarginLeft, String pMarginTop, String pMarginRight, String pMarginBottom, boolean padd_distortion, String tetris, String units, String tradius, Context context){
+    private void setTetris(String pMarginLeft, String pMarginTop, boolean padd_distortion, String tetris, String units, String tradius, Context context){
         this.context=context;
         inX=0;
         inY=0;
@@ -174,19 +172,19 @@ public class TetrisView extends FrameLayout {
         if(units.contains("dp"))unit= util.dp2px(Integer.parseInt(units.split("dp")[0]),context);
         else if(units.contains("px"))unit= Integer.parseInt(units.split("px")[0]);
         else if(units.contains("%")){
-            GlobalWidth =(TetrisClicker.GlobalWidth !=0)?TetrisClicker.GlobalWidth :(int) util.getScreenWidth(context);
+            GlobalWidth =(TetrisClicker.GlobalDimension !=0)?TetrisClicker.GlobalDimension :(int) util.getScreenWidth(context);
             unit= Integer.parseInt(units.split("%")[0]);
             unit= Math.round( (unit/100F)* GlobalWidth);
 
             String left=pMarginLeft;
             String top=pMarginTop;
-            String right=pMarginRight;
-            String bottom=pMarginBottom;
+            String right;
+            String bottom;
 
             left=(left!=null)?left.split("%")[0]:"0";
             top=(top!=null)?top.split("%")[0]:"0";
-            right=(right!=null)?right.split("%")[0]:"0";
-            bottom=(bottom!=null)?bottom.split("%")[0]:"0";
+            right="0";
+            bottom="0";
 
             mLeft= Float.parseFloat(left);
             mTop= Float.parseFloat(top);
@@ -196,9 +194,9 @@ public class TetrisView extends FrameLayout {
             percent=true;
         }setBlackPanther(tetris,unit,radius,context);
     }
-    public void resetTetris(String pMarginLeft, String pMarginTop, String pMarginRight, String pMarginBottom, boolean padd_distortion, String tetris, String units, String tradius){
+    public void resetTetris(String pMarginLeft, String pMarginTop, boolean paddDistortion, String tetris, String units, String tradius){
         if(context==null)throw new IllegalStateException("never called resetTetris() too early! the world could blow up!!!");
-        setTetris(pMarginLeft,pMarginTop,pMarginRight,pMarginBottom,padd_distortion,tetris,units,tradius,context);
+        setTetris(pMarginLeft,pMarginTop,paddDistortion,tetris,units,tradius,context);
         requestLayout();
     }
     private ArrayList<pointTetris> WeldShapes(ArrayList<ShapeTetris> TetrisLis){
@@ -524,8 +522,7 @@ public class TetrisView extends FrameLayout {
         Integer[] prv;
         @Override
         public boolean add(Integer[] curr) {
-            if(!equals(curr))return super.add(curr);
-            return false;
+            return !equals(curr) && super.add(curr);
         }
         boolean equals(Integer[] curr){
             if(prv==null){
@@ -553,7 +550,7 @@ public class TetrisView extends FrameLayout {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        if(getChildCount()>1)throw new IllegalStateException("Only a Child.?. Can't Afford too many Kids");
+        if(getChildCount()>1)throw new BastardException("Only a Child.?. Can't Afford too many Kids.");
             ViewGroup.LayoutParams vLp=getLayoutParams();
             vLp.width=inX;
             vLp.height=inY;
@@ -609,6 +606,12 @@ public class TetrisView extends FrameLayout {
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
         canvas.drawBitmap(bmaP, rect, rect, paint);
         return ObMap;
+    }
+
+    public static class BastardException extends IllegalMonitorStateException{
+        BastardException(String errorInfo){
+            super(errorInfo+": Tetris can't afford extra-Bastards as kids ");
+        }
     }
 
 }

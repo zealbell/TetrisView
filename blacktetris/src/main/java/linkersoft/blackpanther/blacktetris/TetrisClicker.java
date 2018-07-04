@@ -25,7 +25,7 @@ public class TetrisClicker extends FrameLayout {
         in(context, attrs);
     }
 
-    protected static int GlobalWidth;
+    protected static int GlobalDimension;
     private float width,height;
     private void in(@NonNull Context context, @Nullable AttributeSet attrs){
         TypedArray trissa =context.getTheme().obtainStyledAttributes(attrs, R.styleable.TetrisClicker, 0, 0);
@@ -33,11 +33,11 @@ public class TetrisClicker extends FrameLayout {
 
             String wWidth=trissa.getString(R.styleable.TetrisClicker_percentWidth);
             String hHeight=trissa.getString(R.styleable.TetrisClicker_percentHeight);
-            String gGlobalWidth=trissa.getString(R.styleable.TetrisClicker_GlobalWidth);
+            String gGlobalWidth=trissa.getString(R.styleable.TetrisClicker_GlobalDimension);
 
             if(gGlobalWidth==null)gGlobalWidth= util.getScreenWidth(context)+"px";
-            if(gGlobalWidth.contains("dp"))GlobalWidth= util.dp2px(Float.parseFloat(gGlobalWidth.split("dp")[0]),context);
-            else if(gGlobalWidth.contains("px"))GlobalWidth= Integer.parseInt(gGlobalWidth.split("px")[0]);
+            if(gGlobalWidth.contains("dp")) GlobalDimension = util.dp2px(Float.parseFloat(gGlobalWidth.split("dp")[0]),context);
+            else if(gGlobalWidth.contains("px")) GlobalDimension = Integer.parseInt(gGlobalWidth.split("px")[0]);
 
             wWidth=(wWidth!=null)?wWidth.split("%")[0]:"0";
             hHeight=(hHeight!=null)?hHeight.split("%")[0]:"0";
@@ -55,8 +55,8 @@ public class TetrisClicker extends FrameLayout {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
             ViewGroup.LayoutParams mLp= getLayoutParams();
-            mLp.width= Math.round( (width/100F)* GlobalWidth);
-            mLp.height= Math.round( (height/100F)* GlobalWidth);
+            mLp.width= Math.round( (width/100F)* GlobalDimension);
+            mLp.height= Math.round( (height/100F)* GlobalDimension);
             setLayoutParams(mLp);
         if(clickBlocker==null){
             TetrisLis=new ArrayList<>();
