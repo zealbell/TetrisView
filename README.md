@@ -96,11 +96,11 @@ This Library consists of two Major views:
      app:tetris="[vert-tetris:4,2,2,2]2#0"
      app:unit="25%"
 ```
-   the example above says **tetris** has a curve radius of 4dp,**tetris** is vertical and has a height 2x25%[number-of-blocks x (p.o.sw)] = 50 %,
-   **tetris** has topMargin in terms of number-of-blocks equal-to 0(hence Y=0) **tetris** is further padded by 4dp,2dp,2dp and 2dp (left,top,bottom,right).
+   the example above says **tetris** has a curve radius of 4dp, **tetris** is vertical and has a height 2x25%[number-of-blocks x (p.o.sw)] = **50%**,
+   **tetris** has topMargin in terms of number-of-blocks equal-to **0**(hence Y=0) **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
 
 
- ##Activity
+##Activity
 
   Incase you want to change the Tetris @runtime in your Activity here's how
 ```java
