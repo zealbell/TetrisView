@@ -55,7 +55,7 @@ This Library consists of two Major views:
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:radius="4dp"
-        app:tetris="[vert-tetris:0,0,0,0]2#0"   //N.B => **[vert-tetris:0,0,0,0]** = [vert-tetris]**
+        app:tetris="[vert-tetris:0,0,0,0]2#0"   //N.B => [vert-tetris:0,0,0,0] = [vert-tetris]
         app:unit="25%">
 
     <FrameLayout
