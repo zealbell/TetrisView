@@ -93,12 +93,12 @@ This Library consists of two Major views:
                          app:radius="4dp"
                          app:tetris="[vert-tetris:4,2,2,2]2#0"
                          app:unit="25%"    ```
-              from the examples above says tetris has a curve radius of 4dp,tetris is vertical and has a height 2*25%[number-of-blocks*(p.o.s)] = 50 %,
+              from the examples above says tetris has a curve radius of 4dp,tetris is vertical and has a height 2*25%[number-of-blocks*(p.o.sw)] = 50 %,
               tetris has topMargin in terms of number-of-blocks equal-to 0(hence Y=0)
               tetris is further padded by 4dp,2dp,2dp and 2dp (left,top,bottom,right)
 
 
-  Incase you want to change the Tetris @runtime here's how
+  Incase you want to change the Tetris @runtime in your Activity here's how
 ```java
 
   public class THANOS extends AppCompatActivity {
@@ -106,7 +106,7 @@ This Library consists of two Major views:
   String pMarginLeft="0%";
   String pMarginTop="0%";
   boolean paddDistortion=false;
-  String tetris="";
+  String tetris="[horz-tetris:4,2,-2,2]2#1~[vert-tetris:2,2,2,2]3#0~[horz-tetris:-2,2,4,2]1#0";
   String units="20%";
   String radius="8dp";
 
@@ -118,15 +118,16 @@ This Library consists of two Major views:
         blackpanther.resetTetris(pMarginLeft, pMarginTop, paddDistortion, tetris, units, tradius);
     }
 }
-    ```
-## Complex Tetrises
-    #1. Complex Shapes
+```
 
-        ![Demo](shots/complex-shape-tetris0.png)
+## Complex Tetrises
+#1. Complex Shapes
+
+![Demo](shots/complex-shape-tetris0.png)
 
          Here is a complexly shaped TetrisView containing an imageview
 
-        ```xml
+```xml
           <linkersoft.blackpanther.blacktetris.TetrisView
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
@@ -143,7 +144,7 @@ This Library consists of two Major views:
                     android:src="@drawable/blackpanther"/>
 
               </linkersoft.blackpanther.blacktetris.TetrisView>
-          ```
+```
 
     in case you were wondering why the 'topMargin in terms of number-of-blocks' was needed, this example explicitly
     indicates why. the only special thing added here is the '~' found in the tetris-attribute value, which indicates
@@ -153,8 +154,8 @@ This Library consists of two Major views:
     confused??? => take a quick glance above.
 
           Here is Another one
-               ![Demo](shots/complex-shape-tetris1.png)
-              ```xml
+![Demo](shots/complex-shape-tetris1.png)
+```xml
                        <linkersoft.blackpanther.blacktetris.TetrisView
                               android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
@@ -172,11 +173,15 @@ This Library consists of two Major views:
                                  android:src="@drawable/blackpanther"/>
 
                            </linkersoft.blackpanther.blacktetris.TetrisView>
-                       ```
-           ![Demo](shots/complex-shape-tetris2.png)
-           Another one ```xml app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0" ```
-           ![Demo](shots/complex-shape-tetris3.png)
-           Another one ```xml [horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0 ```
+ ```
+![Demo](shots/complex-shape-tetris2.png)
+           Another one
+```xml app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"
+```
+![Demo](shots/complex-shape-tetris3.png)
+           Another one
+```xml [horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0
+```
 
     Ok so enough with DJ-Khaleying 'Another One', basically you get the idea. You are in charge of what tetrisables you would like
     to create.
@@ -185,13 +190,13 @@ This Library consists of two Major views:
         In situations you really want to stack up your TetrisViews like a real TetrisLock as per the way the Game is aimed at locking the
         right objects to plug into one another correctly. I mean something like this:
 
-         ![Demo](shots/complex-arrangement-tetris.png)
+![Demo](shots/complex-arrangement-tetris.png)
 
          that's where the TetrisClick(ViewGroup$FrameLayout) comes in. so that the clicks are handled correctly for TetrisViews whose bounding
          rectangles/boxes overlap also for positioning too.
               Have Another one(*_*):
                
-               ```xml
+```xml
                <linkersoft.blackpanther.blacktetris.TetrisClicker
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
@@ -299,28 +304,34 @@ This Library consists of two Major views:
                
                </linkersoft.blackpanther.blacktetris.TetrisClicker>
                
-          ```
+```
 
-       #NOTE
+#NOTE
 
-          ```xml
-            app:GlobalWidth="200dp"
-            app:percentWidth="100%"
-            app:percentHeight="100%" ``` at  ```xml <...TetrisClicker>...</...> ```
-             specifies the GlobalDimension for the TetrisClicker to be 200dp
-             and the Width of the TetrisClicker = 100% of 200dp,
-                     Height of the TetrisClicker = 100% of 200dp
+```xml
+    app:GlobalWidth="200dp"
+    app:percentWidth="100%"
+    app:percentHeight="100%"
+``` at
+```xml <...TetrisClicker>...</...>
+```
+   specifies the GlobalDimension for the TetrisClicker to be 200dp
+   and the Width of the TetrisClicker = 100% of 200dp,
+   Height of the TetrisClicker = 100% of 200dp
 
-       #ALSO
-          Automatically any TetrisView placed in the TetrisClicker inherits the GlobalHeight as it's
-          unit reference dimension instead of the screen-width of the device hence
-       ```xml
-           app:unit="25%"
-           app:percentMarginTop="50%"
-           app:percentMarginLeft="75%" ``` at any ```xml <...TetrisView>...</...> ```
-              specifies that unit = 25% of 200dp(TetrisClicker's GlobalWidth)
-              and the MarginTop of the TetrisView = 50% of 200dp,
-              MarginLeft of the TetrisView = 75% of 200dp
+#ALSO
+   Automatically any TetrisView placed in the TetrisClicker inherits the GlobalHeight as it's
+   unit reference dimension instead of the screen-width of the device hence
+```xml
+   app:unit="25%"
+   app:percentMarginTop="50%"
+   app:percentMarginLeft="75%"
+``` at any
+```xml <...TetrisView>...</...>
+```
+   specifies that unit = 25% of 200dp(TetrisClicker's GlobalWidth)
+   and the MarginTop of the TetrisView = 50% of 200dp,
+   MarginLeft of the TetrisView = 75% of 200dp
 
 ## Motivation
    This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other
