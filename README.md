@@ -7,27 +7,27 @@ and as the name implies you can construct your views to be arranged just like th
 
 ## Synopsis
 This Library consists of two Major views:
-  1. TetrisView(ViewGroup$FrameLayout) which throws a BastardException if more than a child is added.
+  1. **TetrisView(ViewGroup$FrameLayout)** which throws a BastardException if more than a child is added.
                                        a simple example is a TetrisView with a single view such as an imageview
                                        a composite example is a TetrisView with a single framelayout containing
                                        an imageview and a textview
                                     
-  2. TetrisClick(ViewGroup$FrameLayout) which can contain multiple TetrisView-kids/children and at the same time
+  2. **TetrisClick(ViewGroup$FrameLayout)** which can contain multiple TetrisView-kids/children and at the same time
                                         and handles click listeners according to the shape of each TetrisView rather
                                         than by its default bounding boxe/rectangle
 
 ## Quick Start
 
-               dependencies {
-                  compile 'com.github.54LiNKeR:TetrisView:1.1.0'
-               }
+   dependencies {
+      compile 'com.github.54LiNKeR:TetrisView:1.1.0'
+   }
 
 
 ### Code Example
 
    Here is a simple TetrisView containing an imageview in an horizontal manner
 
-         ![Demo](shots/simple-tetris.png)
+![Demo](shots/simple-tetris.png)
 
 ```xml
     <linkersoft.blackpanther.blacktetris.TetrisView
@@ -77,27 +77,27 @@ This Library consists of two Major views:
     
     </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
-#XML Attributes Syntax
-
+**#XML Attributes Syntax**
+```xml
     unit:"the percentage of the screen-width(p.o.sw) for each block that makes up the tetris"
     radius:"radius of your choice in dp/px"
     tetris: "[name-of-tetris:left-pad,top-pad,right-pad,bottom-pad]number-of-blocks#topMargin in terms of number-of-blocks"
+``
 
-
-*#XML Attributes Butchered in details*
+**#XML Attributes Butchered in details**
   name-of-tetris => can either be 'vert-tetris' or 'horz-tetris' since tetris components can either be classified horizontal or vertical
   padd => the padds take the dimension of the radius(dp/px) hence only numeric values are required
   tetris => can be have more than a combination of vertical and horizontal tetrises(see below).
+*thus*
+```xml
+     app:radius="4dp"
+     app:tetris="[vert-tetris:4,2,2,2]2#0"
+     app:unit="25%"
+```
+   from the examples above says **tetris** has a curve radius of 4dp,**tetris** is vertical and has a height 2*25%[number-of-blocks*(p.o.sw)] = 50 %,
+   **tetris** has topMargin in terms of number-of-blocks equal-to 0(hence Y=0) **tetris** is further padded by 4dp,2dp,2dp and 2dp (left,top,bottom,right)
 
-                thus ```xml
-                         app:radius="4dp"
-                         app:tetris="[vert-tetris:4,2,2,2]2#0"
-                         app:unit="25%"    ```
-              from the examples above says tetris has a curve radius of 4dp,tetris is vertical and has a height 2*25%[number-of-blocks*(p.o.sw)] = 50 %,
-              tetris has topMargin in terms of number-of-blocks equal-to 0(hence Y=0)
-              tetris is further padded by 4dp,2dp,2dp and 2dp (left,top,bottom,right)
-
-
+##Activity
   Incase you want to change the Tetris @runtime in your Activity here's how
 ```java
 
@@ -121,7 +121,7 @@ This Library consists of two Major views:
 ```
 
 ## Complex Tetrises
-#1. Complex Shapes
+ **1. Complex Shapes**
 
 ![Demo](shots/complex-shape-tetris0.png)
 
