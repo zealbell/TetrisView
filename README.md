@@ -89,12 +89,13 @@ This Library consists of two Major views:
   padd => the padds take the dimension of the radius(dp/px) hence only numeric values are required
   tetris => can be have more than a combination of vertical and horizontal tetrises(see below).
 
-                thus '   app:radius="4dp"
+                thus ```xml
+                         app:radius="4dp"
                          app:tetris="[vert-tetris:4,2,2,2]2#0"
-                         app:unit="25%"    ' from the examples above
-                says tetris has a curve radius of 4dp,tetris is vertical and has a height 2*25%[number-of-blocks*(p.o.s)] = 50 %,
-                     tetris has topMargin in terms of number-of-blocks equal-to 0(hence Y=0)
-                     tetris is further padded by 4dp,2dp,2dp and 2dp (left,top,bottom,right)
+                         app:unit="25%"    ```
+              from the examples above says tetris has a curve radius of 4dp,tetris is vertical and has a height 2*25%[number-of-blocks*(p.o.s)] = 50 %,
+              tetris has topMargin in terms of number-of-blocks equal-to 0(hence Y=0)
+              tetris is further padded by 4dp,2dp,2dp and 2dp (left,top,bottom,right)
 
 
   Incase you want to change the Tetris @runtime here's how
