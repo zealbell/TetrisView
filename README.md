@@ -35,7 +35,7 @@ This Library consists of two Major views:
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:radius="4dp"
-        app:tetris="[vert-tetris:4,2,2,2]2#0"
+        app:tetris="[vert-tetris]2#0"
         app:unit="25%">
 
           <ImageView
@@ -55,7 +55,7 @@ This Library consists of two Major views:
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:radius="4dp"
-        app:tetris="[vert-tetris:4,2,2,2]2#0"
+        app:tetris="[vert-tetris:0,0,0,0]2#0"   //N.B => **[vert-tetris:0,0,0,0]** = [vert-tetris]**
         app:unit="25%">
 
     <FrameLayout
@@ -102,7 +102,7 @@ This Library consists of two Major views:
 
 ##Activity
 
-  Incase you want to change the Tetris @runtime in your Activity here's how
+  - Incase you want to change the Tetris @runtime in your Activity here's how
 ```java
 
   public class THANOS extends AppCompatActivity {
