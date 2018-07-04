@@ -12,9 +12,9 @@ This Library consists of two Major views:
                                        a composite example is a TetrisView with a single framelayout containing
                                        an imageview and a textview
                                     
-  2. **TetrisClick(ViewGroup$FrameLayout)** which can contain multiple TetrisView-kids/children and at the same time
+  2. **TetrisClick(ViewGroup$FrameLayout)** which can contain TetrisView-kids/children and at the same time
                                         and handles click listeners according to the shape of each TetrisView rather
-                                        than by its default bounding boxe/rectangle
+                                        than by its default bounding box/rectangle
 
 ## Quick Start
 
@@ -24,7 +24,7 @@ This Library consists of two Major views:
 
 
 ### Code Example
-   **Spoiler-Alert**You don't need to read through except you encounter problems testiing. also
+   **Spoiler-Alert: **You don't need to read through except you encounter problems testing. also
    feel free to twitch the examples as much as possible to your taste in order to better understand
    how the **API** works. Here is a simple TetrisView containing an imageview in an horizontal manner
 
@@ -47,7 +47,7 @@ This Library consists of two Major views:
     </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
 
-  Here is an example of a single-compound TetrisView containing an imageview and a basic view
+  Here is an example of a compound TetrisView containing an imageview and a basic view
   in a framelayout(it's a simple modification to the above)
 
 ```xml
@@ -85,8 +85,8 @@ This Library consists of two Major views:
     tetris: "[name-of-tetris:left-pad,top-pad,right-pad,bottom-pad]number-of-blocks#topMargin in terms of number-of-blocks"
 ```
 
-**XML Attributes Butchered in details**
-   explaining further
+**XML Attributes Butchered**
+   - explaining further
   **name-of-tetris** => can either be '**vert-tetris**' or '**horz-tetris**' since tetris components can either be classified horizontal or vertical
   ;**padd** => the padds take the dimension of the radius(**dp/px**) hence only numeric values are required.
   ;**tetris** => can be have more than a combination of vertical and horizontal tetrises(see below).
