@@ -85,19 +85,22 @@ This Library consists of two Major views:
 ```
 
 **XML Attributes Butchered in details**
+   explaining further
   **name-of-tetris** => can either be '**vert-tetris**' or '**horz-tetris**' since tetris components can either be classified horizontal or vertical
-  **padd** => the padds take the dimension of the radius(**dp/px**) hence only numeric values are required
-  tetris => can be have more than a combination of vertical and horizontal tetrises(see below).
+  ;**padd** => the padds take the dimension of the radius(**dp/px**) hence only numeric values are required.
+  ;**tetris** => can be have more than a combination of vertical and horizontal tetrises(see below).
   *furthermore*
 ```xml
      app:radius="4dp"
      app:tetris="[vert-tetris:4,2,2,2]2#0"
      app:unit="25%"
 ```
-   the example above says **tetris** has a curve radius of 4dp,**tetris** is vertical and has a height 2*25%[number-of-blocks*(p.o.sw)] = 50 %,
-   **tetris** has topMargin in terms of number-of-blocks equal-to 0(hence Y=0) **tetris** is further padded by 4dp,2dp,2dp and 2dp (left,top,bottom,right)
+   the example above says **tetris** has a curve radius of 4dp,**tetris** is vertical and has a height 2x25%[number-of-blocks x (p.o.sw)] = 50 %,
+   **tetris** has topMargin in terms of number-of-blocks equal-to 0(hence Y=0) **tetris** is further padded by 4dp,2dp,2dp and 2dp (left,top,bottom,right).
 
-##Activity
+
+ ##Activity
+
   Incase you want to change the Tetris @runtime in your Activity here's how
 ```java
 
@@ -125,7 +128,7 @@ This Library consists of two Major views:
 
 ![Demo](shots/complex-shape-tetris0.png)
 
-         Here is a complexly shaped TetrisView containing an imageview
+Here is a complex shape TetrisView containing an imageview
 
 ```xml
           <linkersoft.blackpanther.blacktetris.TetrisView
@@ -150,7 +153,7 @@ This Library consists of two Major views:
     indicates why. the only special thing added here is the '~' found in the tetris-attribute value, which indicates
     separation between each tetris-types to be fused together as a single shape for the TetrisView i.e. the example
     above is made up of a horizontal-tetris + vertical-tetris + horizontal-tetris and to expantiate the first tetris-type(horizontal-tetris)
-    is 2blocks wide(i.e. 2*25% wide), the second is 3blocks tall(i.e. 3*25% tall) and the last is 1block wide(i.e. 1*25% wide).
+    is 2blocks wide(i.e. 2x25% wide), the second is 3blocks tall(i.e. 3x25% tall) and the last is 1block wide(i.e. 1x25% wide).
     confused??? => take a quick glance above.
 
           Here is Another one
@@ -173,20 +176,22 @@ This Library consists of two Major views:
                                  android:src="@drawable/blackpanther"/>
 
                            </linkersoft.blackpanther.blacktetris.TetrisView>
- ```
+```
 ![Demo](shots/complex-shape-tetris2.png)
            Another one
-```xml app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"
+```xml
+  app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"
 ```
 ![Demo](shots/complex-shape-tetris3.png)
            Another one
-```xml [horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0
+```xml
+   [horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0
 ```
 
     Ok so enough with DJ-Khaleying 'Another One', basically you get the idea. You are in charge of what tetrisables you would like
     to create.
 
-    #2. Complex Arrangements and Shapes
+ **#2. Complex Arrangements and Shapes**
         In situations you really want to stack up your TetrisViews like a real TetrisLock as per the way the Game is aimed at locking the
         right objects to plug into one another correctly. I mean something like this:
 
@@ -382,7 +387,7 @@ SOFTWARE.
 
 EVERY COMMIT TO THE PROJECT OTHER THAN THE FOUR-GREAT AUTHORS WHO CURRENTLY
 RESIDE ON THE MOON MUST BE STARTED WITH A MISSION ACCOMPLISHED COMMIT MESSAGE IN
-A NON ENCRYPTABLE STRING FORMAT  PLAIN ENOUGH FOR ANY ONE TO SMELL,READ,DRINK OR EAT.
+A NON ENCRYPTABLE STRING FORMAT PLAIN ENOUGH FOR ANY ONE TO SMELL,READ,DRINK OR EAT.
 
 
 ```
