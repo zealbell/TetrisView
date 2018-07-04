@@ -94,7 +94,7 @@ This Library consists of two Major views:
      app:tetris="[vert-tetris:4,2,2,2]2#0"
      app:unit="25%"
 ```
-   from the examples above says **tetris** has a curve radius of 4dp,**tetris** is vertical and has a height 2*25%[number-of-blocks*(p.o.sw)] = 50 %,
+   the example above says **tetris** has a curve radius of 4dp,**tetris** is vertical and has a height 2*25%[number-of-blocks*(p.o.sw)] = 50 %,
    **tetris** has topMargin in terms of number-of-blocks equal-to 0(hence Y=0) **tetris** is further padded by 4dp,2dp,2dp and 2dp (left,top,bottom,right)
 
 ##Activity
