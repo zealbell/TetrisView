@@ -2,21 +2,21 @@
 
 TetrisView
 =============
-A very creative UI, that displays a single-simple/compound view in any tetris-shape adding some magic with a tasteful curve all around.
+A very creative UI, that displays a simple/compound view in any tetris-shape adding some magic with a tasteful curve all around.
 and as the name implies you can construct your views to be arranged just like the tetris game.
 
 ## Synopsis
 This Library consists of two Major views:
-  1. TetrisView(ViewGroup$FrameLayout) which throws a BastardException if more than a child is added. a
-                                       a simple example is a TetrisView with a single view such an imageview
+  1. TetrisView(ViewGroup$FrameLayout) which throws a BastardException if more than a child is added.
+                                       a simple example is a TetrisView with a single view such as an imageview
                                        a composite example is a TetrisView with a single framelayout containing
                                        an imageview and a textview
                                     
   2. TetrisClick(ViewGroup$FrameLayout) which can contain multiple TetrisView-kids/children and at the same time
                                         and handles click listeners according to the shape of each TetrisView rather
-                                        than by their default bounding boxes/rectangles
+                                        than by its default bounding boxe/rectangle
 
-               ### Quick Start
+## Quick Start
 
                dependencies {
                   compile 'com.github.54LiNKeR:TetrisView:1.1.0'
@@ -25,9 +25,9 @@ This Library consists of two Major views:
 
 ### Code Example
 
-   Here is a single-simple TetrisView containing an imageview
+   Here is a simple TetrisView containing an imageview in an horizontal manner
 
-  ![Demo](shots/simple-tetris.png)
+         ![Demo](shots/simple-tetris.png)
 
 ```xml
     <linkersoft.blackpanther.blacktetris.TetrisView
@@ -46,7 +46,7 @@ This Library consists of two Major views:
     </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
 
-  Here is an example of a single-compound TetrisView containing an imageview and a textview
+  Here is an example of a single-compound TetrisView containing an imageview and a basic view
   in a framelayout(it's a simple modification to the above)
 
 ```xml
@@ -79,12 +79,12 @@ This Library consists of two Major views:
 ```
 #XML Attributes Syntax
 
-    unit:"the percentage of the screen-width(p.o.s) for each block that makes up the tetris"
+    unit:"the percentage of the screen-width(p.o.sw) for each block that makes up the tetris"
     radius:"radius of your choice in dp/px"
     tetris: "[name-of-tetris:left-pad,top-pad,right-pad,bottom-pad]number-of-blocks#topMargin in terms of number-of-blocks"
 
 
-#XML Attributes Butchered in details
+*#XML Attributes Butchered in details*
   name-of-tetris => can either be 'vert-tetris' or 'horz-tetris' since tetris components can either be classified horizontal or vertical
   padd => the padds take the dimension of the radius(dp/px) hence only numeric values are required
   tetris => can be have more than a combination of vertical and horizontal tetrises(see below).
