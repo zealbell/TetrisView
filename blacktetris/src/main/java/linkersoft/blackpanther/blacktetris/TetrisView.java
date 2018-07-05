@@ -34,7 +34,7 @@ public class TetrisView extends FrameLayout {
 
     private Context context;
     private Panther blackPanther;
-    private int inX,inY, GlobalWidth;
+    private int inX,inY, GlobalBlockSize;
     private float mLeft,mTop,mRight,mBottom;
     private boolean distort,dp,percent;
     private Polygon absolute;
@@ -48,13 +48,13 @@ public class TetrisView extends FrameLayout {
                        tetrissa.getString(R.styleable.TetrisView_percentMarginTop),
                        tetrissa.getBoolean(R.styleable.TetrisView_paddDistortion,false),
                        tetrissa.getString(R.styleable.TetrisView_tetris),
-                       tetrissa.getString(R.styleable.TetrisView_unit),
+                       tetrissa.getString(R.styleable.TetrisView_blocksize),
                        tetrissa.getString(R.styleable.TetrisView_radius),context);
         }finally{tetrissa.recycle();}
 
 
     }
-    private void setBlackPanther(String tetris, int unit, int radius, Context context){
+    private void setBlackPanther(String tetris, int blocksize, int radius, Context context){
         int trX,trY,tlX,tlY,brX,brY=0,blX,blY=0,lengthUnit,elevationUnit,height=0,padTop=0,padRight=0,padBottom=0,padLeft=0;
         ArrayList<ShapeTetris> TetrisList=new ArrayList<>();
         String shapeTetrises[]=tetris.split("~");
@@ -78,19 +78,19 @@ public class TetrisView extends FrameLayout {
                 tlX=inX;
                 tlY=inY;
 
-                trX=inX+(lengthUnit*unit);
+                trX=inX+(lengthUnit*blocksize);
                 trY=inY;
 
-                brX=inX+(lengthUnit*unit);
-                brY=inY+unit;
+                brX=inX+(lengthUnit*blocksize);
+                brY=inY+blocksize;
 
                 blX=inX;
-                blY=inY+unit;
+                blY=inY+blocksize;
 
-                tlY=tlY+(elevationUnit*unit);
-                trY=trY+(elevationUnit*unit);
-                brY=brY+(elevationUnit*unit);
-                blY=blY+(elevationUnit*unit);
+                tlY=tlY+(elevationUnit*blocksize);
+                trY=trY+(elevationUnit*blocksize);
+                brY=brY+(elevationUnit*blocksize);
+                blY=blY+(elevationUnit*blocksize);
 
                 tlX+=padLeft;    tlY+=padTop;
                 blX+=padLeft;    trY+=padTop;
@@ -108,25 +108,25 @@ public class TetrisView extends FrameLayout {
 
                 shapytrx.tetrixX.add(blX);    //3
                 shapytrx.tetrixY.add(blY);    //3
-                if(!distort)inX+=(lengthUnit*unit);
-                else inX+=(lengthUnit*unit)+padLeft-padRight;
+                if(!distort)inX+=(lengthUnit*blocksize);
+                else inX+=(lengthUnit*blocksize)+padLeft-padRight;
             }else if(tetrisType.contains("vert-tetris")){
                 tlX=inX;
                 tlY=inY;
 
-                trX=inX+unit;
+                trX=inX+blocksize;
                 trY=inY;
 
-                brX=inX+unit;
-                brY=inY+(lengthUnit*unit);
+                brX=inX+blocksize;
+                brY=inY+(lengthUnit*blocksize);
 
                 blX=inX;
-                blY=inY+(lengthUnit*unit);
+                blY=inY+(lengthUnit*blocksize);
 
-                tlY=tlY+(elevationUnit*unit);
-                trY=trY+(elevationUnit*unit);
-                brY=brY+(elevationUnit*unit);
-                blY=blY+(elevationUnit*unit);
+                tlY=tlY+(elevationUnit*blocksize);
+                trY=trY+(elevationUnit*blocksize);
+                brY=brY+(elevationUnit*blocksize);
+                blY=blY+(elevationUnit*blocksize);
 
                 tlX+=padLeft;    tlY+=padTop;
                 blX+=padLeft;    trY+=padTop;
@@ -144,8 +144,8 @@ public class TetrisView extends FrameLayout {
 
                 shapytrx.tetrixX.add(blX);    //3
                 shapytrx.tetrixY.add(blY);    //3
-                if(!distort)inX+=unit;
-                else inX+=unit+padLeft-padRight;
+                if(!distort)inX+=blocksize;
+                else inX+=blocksize+padLeft-padRight;
             }TetrisList.add(shapytrx);
             if(blY>height)height=brY;
         }
@@ -153,7 +153,7 @@ public class TetrisView extends FrameLayout {
         inY=height;
         CurvifyShapes(WeldShapes(TetrisList),radius);
     }
-    private void setTetris(String pMarginLeft, String pMarginTop, boolean padd_distortion, String tetris, String units, String tradius, Context context){
+    private void setTetris(String pMarginLeft, String pMarginTop, boolean padd_distortion, String tetris, String blocksizes, String tradius, Context context){
         this.context=context;
         inX=0;
         inY=0;
@@ -161,7 +161,7 @@ public class TetrisView extends FrameLayout {
         SHURI=null;
         distort=padd_distortion;
         percent=false;
-        int unit=0;
+        int blocksize=0;
         int radius=0;
 
         if(tradius.contains("dp")){
@@ -169,12 +169,12 @@ public class TetrisView extends FrameLayout {
             dp=true;
         }else if(tradius.contains("px"))radius= Integer.parseInt(tradius.split("px")[0]);
 
-        if(units.contains("dp"))unit= util.dp2px(Integer.parseInt(units.split("dp")[0]),context);
-        else if(units.contains("px"))unit= Integer.parseInt(units.split("px")[0]);
-        else if(units.contains("%")){
-            GlobalWidth =(TetrisClicker.GlobalDimension !=0)?TetrisClicker.GlobalDimension :(int) util.getScreenWidth(context);
-            unit= Integer.parseInt(units.split("%")[0]);
-            unit= Math.round( (unit/100F)* GlobalWidth);
+        if(blocksizes.contains("dp"))blocksize= util.dp2px(Integer.parseInt(blocksizes.split("dp")[0]),context);
+        else if(blocksizes.contains("px"))blocksize= Integer.parseInt(blocksizes.split("px")[0]);
+        else if(blocksizes.contains("%")){
+            GlobalBlockSize =(TetrisClicker.GlobalBlockSize !=0)?TetrisClicker.GlobalBlockSize :(int) util.getScreenWidth(context);
+            blocksize= Integer.parseInt(blocksizes.split("%")[0]);
+            blocksize= Math.round( (blocksize/100F)* GlobalBlockSize);
 
             String left=pMarginLeft;
             String top=pMarginTop;
@@ -192,11 +192,11 @@ public class TetrisView extends FrameLayout {
             mBottom= Float.parseFloat(bottom);
 
             percent=true;
-        }setBlackPanther(tetris,unit,radius,context);
+        }setBlackPanther(tetris,blocksize,radius,context);
     }
-    public void resetTetris(String pMarginLeft, String pMarginTop, boolean paddDistortion, String tetris, String units, String tradius){
+    public void resetTetris(String pMarginLeft, String pMarginTop, boolean paddDistortion, String tetris, String blocksizes, String tradius){
         if(context==null)throw new IllegalStateException("never called resetTetris() too early! the world could blow up!!!");
-        setTetris(pMarginLeft,pMarginTop,paddDistortion,tetris,units,tradius,context);
+        setTetris(pMarginLeft,pMarginTop,paddDistortion,tetris,blocksizes,tradius,context);
         requestLayout();
     }
     private ArrayList<pointTetris> WeldShapes(ArrayList<ShapeTetris> TetrisLis){
@@ -557,10 +557,10 @@ public class TetrisView extends FrameLayout {
             setLayoutParams(vLp);
         if(percent){
             MarginLayoutParams mLp= (MarginLayoutParams)vLp;
-            mLp.leftMargin= Math.round( (mLeft/100F)* GlobalWidth);
-            mLp.topMargin= Math.round( (mTop/100F)* GlobalWidth);
-            mLp.rightMargin= Math.round( (mRight/100F)* GlobalWidth);
-            mLp.bottomMargin= Math.round( (mBottom/100F)* GlobalWidth);
+            mLp.leftMargin= Math.round( (mLeft/100F)* GlobalBlockSize);
+            mLp.topMargin= Math.round( (mTop/100F)* GlobalBlockSize);
+            mLp.rightMargin= Math.round( (mRight/100F)* GlobalBlockSize);
+            mLp.bottomMargin= Math.round( (mBottom/100F)* GlobalBlockSize);
             setLayoutParams(mLp);
         }setMeasuredDimension(inX,inY);
 

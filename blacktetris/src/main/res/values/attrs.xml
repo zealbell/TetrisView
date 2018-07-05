@@ -2,13 +2,13 @@
     <declare-styleable name="TetrisView">
         <attr name="radius" format="string"/>
         <attr name="tetris" format="string"/>
-        <attr name="unit" format="string"/>
+        <attr name="blocksize" format="string"/>
         <attr name="paddDistortion" format="boolean"/>
         <attr name="percentMarginLeft" format="string"/>
         <attr name="percentMarginTop" format="string"/>
     </declare-styleable>
     <declare-styleable name="TetrisClicker">
-        <attr name="GlobalDimension" format="string"/>
+        <attr name="GlobalBlockSize" format="string"/>
         <attr name="percentWidth" format="string"/>
         <attr name="percentHeight" format="string"/>
     </declare-styleable>

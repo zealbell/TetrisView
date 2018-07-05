@@ -1,18 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="linkersoft.blackpanther.tetrisview.BlackCore">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <linkersoft.blackpanther.blacktetris.TetrisView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:radius="4dp"
+            app:tetris="[horz-tetris]2#1~[vert-tetris]3#0~[horz-tetris]1#2"
+            app:blocksize="50dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="#ff0000"/>
+
+        </linkersoft.blackpanther.blacktetris.TetrisView>
+        <linkersoft.blackpanther.blacktetris.TetrisClicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:GlobalBlockSize="200dp"
+            app:percentWidth="100%"
+            app:percentHeight="100%"
+            android:layout_marginTop="30dp">
+
+            <linkersoft.blackpanther.blacktetris.TetrisView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:radius="4dp"
+                app:tetris="[horz-tetris]1#2~[vert-tetris]2#1~[vert-tetris]2#0~[vert-tetris]1#0"
+                app:blocksize="25%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="#00ff00"/>
+
+            </linkersoft.blackpanther.blacktetris.TetrisView>
+
+
+        </linkersoft.blackpanther.blacktetris.TetrisClicker>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -38,7 +38,7 @@ This Library consists of two Major views:
         android:layout_height="wrap_content"
         app:radius="4dp"
         app:tetris="[vert-tetris]2#0"
-        app:unit="25%">
+        app:blocksize="25%">
 
           <ImageView
             android:layout_width="match_parent"
@@ -58,7 +58,7 @@ This Library consists of two Major views:
         android:layout_height="wrap_content"
         app:radius="4dp"
         app:tetris="[vert-tetris:0,0,0,0]2#0"   //N.B => [vert-tetris:0,0,0,0] is the same as [vert-tetris]
-        app:unit="25%">
+        app:blocksize="25%">
 
     <FrameLayout
        android:layout_width="match_parent"
@@ -82,7 +82,7 @@ This Library consists of two Major views:
 ```
 **XML Attributes Syntax**
 
-   - **unit:** "*the percentage of the device screenwidth(p.o.sw) to be used for each block that makes up the tetris(**this is the block-size**)*"
+   - **blocksize:** "*the percentage of the device screenwidth(p.o.sw) to be used for each block that makes up the tetris(**this is the block-size**)*"
    - **radius:** "*radius of your choice in dp/px*"
    - **tetris:** "[*type-of-tetris:left-pad,top-pad,right-pad,bottom-pad*]*block-size*#*topMargin in terms of block-size*"
 
@@ -95,7 +95,7 @@ This Library consists of two Major views:
 ```xml
      app:radius="4dp"
      app:tetris="[vert-tetris:4,2,2,2]2#0"
-     app:unit="25%"
+     app:blocksize="25%"
 ```
   *in the example above implies*
    - **tetris** has a round edged curve of radius 4dp,
@@ -115,7 +115,7 @@ This Library consists of two Major views:
   String pMarginTop="0%";
   boolean paddDistortion=false;
   String tetris="[horz-tetris:4,2,-2,2]2#1~[vert-tetris:2,2,2,2]3#0~[horz-tetris:-2,2,4,2]1#0";
-  String units="20%";
+  String blocksizes="20%";
   String radius="8dp";
 
     @Override
@@ -123,7 +123,7 @@ This Library consists of two Major views:
         super.onCreate(savedInstanceState);
         setContentView(R.layout.TonyStark);
         TetrisView blackpanther = (TetrisView) findViewById(R.id.tetrisview);
-        blackpanther.resetTetris(pMarginLeft, pMarginTop, paddDistortion, tetris, units, tradius);
+        blackpanther.resetTetris(pMarginLeft, pMarginTop, paddDistortion, tetris, blocksizes, tradius);
     }
 }
 ```
@@ -141,7 +141,7 @@ Here is a complex shape TetrisView containing an imageview
                  android:layout_gravity="center"
                  app:radius="4dp"
                  app:tetris="[horz-tetris:4,2,-2,2]2#1~[vert-tetris:2,2,2,2]3#0~[horz-tetris:-2,2,4,2]1#0"
-                 app:unit="25%"
+                 app:blocksize="25%"
                 >
 
                  <ImageView
@@ -174,7 +174,7 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
                               android:id="@+id/D"
                               app:radius="4dp"
                               app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[vert-tetris:-2,2,2,2]3#1~[vert-tetris:-2,2,2,2]2#1"
-                              app:unit="25%"
+                              app:blocksize="25%"
                              >
 
                               <ImageView
@@ -217,7 +217,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
                <linkersoft.blackpanther.blacktetris.TetrisClicker
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   app:GlobalDimension="200dp"
+                   app:GlobalBlockSize="200dp"
                    app:percentWidth="100%"
                    app:percentHeight="100%"
                    android:background="#ffffff">
@@ -227,7 +227,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
                        android:layout_height="wrap_content"
                        app:radius="4dp"
                        app:tetris="[vert-tetris:4,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#0"
-                       app:unit="25%">
+                       app:blocksize="25%">
                
                         <ImageView
                           android:layout_width="match_parent"
@@ -242,7 +242,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
                        android:layout_height="wrap_content"
                        app:radius="4dp"
                        app:tetris="[horz-tetris:2,2,4,2]2#0"
-                       app:unit="25%"
+                       app:blocksize="25%"
                        app:percentMarginLeft="50%">
                
                       <ImageView
@@ -258,7 +258,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
                        android:layout_height="wrap_content"
                        app:radius="4dp"
                        app:tetris="[vert-tetris:2,2,2,2]1#0"
-                       app:unit="25%"
+                       app:blocksize="25%"
                        app:percentMarginLeft="25%"
                        app:percentMarginTop="25%">
                
@@ -275,7 +275,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
                        android:layout_height="wrap_content"
                        app:radius="4dp"
                        app:tetris="[horz-tetris:4,2,-2,2]2#1~[vert-tetris:2,2,2,2]3#0~[horz-tetris:-2,2,4,2]1#0"
-                       app:unit="25%"
+                       app:blocksize="25%"
                        app:percentMarginTop="25%">
                
                        <ImageView
@@ -291,7 +291,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
                        android:layout_height="wrap_content"
                        app:radius="4dp"
                        app:tetris="[vert-tetris:2,2,4,2]2#0"
-                       app:unit="25%"
+                       app:blocksize="25%"
                        app:percentMarginLeft="75%"
                        app:percentMarginTop="50%">
                
@@ -308,7 +308,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
                        android:layout_height="wrap_content"
                        app:radius="4dp"
                        app:tetris="[horz-tetris:4,2,2,2]2#0"
-                       app:unit="25%"
+                       app:blocksize="25%"
                        app:percentMarginTop="75%">
                
                         <ImageView
@@ -326,7 +326,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
 **NOTE**
 
 ```xml
-    app:GlobalDimension="200dp"
+    app:GlobalBlockSize="200dp"
     app:percentWidth="100%"
     app:percentHeight="100%"
 ```
@@ -335,15 +335,15 @@ whose bounding rectangles/boxes overlap also for positioning too.
   <..TetrisClicker>..</..>
 ```
 *specifies that* 
-  - __*GlobalDimension*__ for the TetrisClicker = 200dp
-  - __*Width of the TetrisClicker*__ = 100% of 200dp(**100% of GlobalDimension**),
-  - __*Height of the TetrisClicker*__ = 100% of 200dp(**100% of GlobalDimension**).
+  - __*GlobalBlockSize*__ for the TetrisClicker = 200dp
+  - __*Width of the TetrisClicker*__ = 100% of 200dp(**100% of GlobalBlockSize**),
+  - __*Height of the TetrisClicker*__ = 100% of 200dp(**100% of GlobalBlockSize**).
 
 **ALSO**
-   Automatically any TetrisView placed in the TetrisClicker inherits the GlobalDimension as it's
-   unit reference instead of the screen-width of the device thus 
+   Automatically any TetrisView placed in the TetrisClicker inherits the GlobalBlockSize as it's
+   blocksize reference instead of the screen-width of the device thus 
 ```xml
-   app:unit="25%"
+   app:blocksize="25%"
    app:percentMarginTop="50%"
    app:percentMarginLeft="75%"
 ```
@@ -352,9 +352,9 @@ whose bounding rectangles/boxes overlap also for positioning too.
   <..TetrisView>..</..>
 ```
 *above, specifies that* 
-   - __*unit*__ = 25% of 200dp(**TetrisClicker's GlobalDimension**),
-   - __*MarginTop of the TetrisView*__ = 50% of 200dp(**50% of TetrisClicker's GlobalDimension**),
-   - __*MarginLeft of the TetrisView*__ = 75% of 200dp(**75% of TetrisClicker's GlobalDimension**).
+   - __*blocksize*__ = 25% of 200dp(**TetrisClicker's GlobalBlockSize**),
+   - __*MarginTop of the TetrisView*__ = 50% of 200dp(**50% of TetrisClicker's GlobalBlockSize**),
+   - __*MarginLeft of the TetrisView*__ = 75% of 200dp(**75% of TetrisClicker's GlobalBlockSize**).
 
 ## Motivation
    This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers who Dance, Rap, Sing and Act only.
