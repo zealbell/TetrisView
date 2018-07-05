@@ -6,9 +6,7 @@ A very creative UI, that displays a simple/compound view in any tetris-shape add
 and as the name implies you can construct your views to be arranged just like in any tetris game.
 
 ## Synopsis
-This Library consists of two Major views:
-
-`<ghgvgv >` 
+This Library consists of two Major views: 
   1. **TetrisView(ViewGroup$FrameLayout)** which throws a BastardException if more than a child is added.
                                        a simple example is a TetrisView with a single view such as an imageview,
                                        a composite example is a TetrisView with a single framelayout containing
@@ -210,7 +208,7 @@ you would like to create.
 
 that's where the **TetrisClick(ViewGroup$FrameLayout)** comes in. so that the clicks are handled correctly for TetrisViews
 whose bounding rectangles/boxes overlap also for positioning too.
-     - Have Another one(*_**)
+     - Have Another one('*'_'*')
                
 ```xml
                <linkersoft.blackpanther.blacktetris.TetrisClicker
@@ -349,9 +347,10 @@ at any
 ```xml
   <..TetrisView>..</..>
 ```
-   specifies that unit = 25% of 200dp(**TetrisClicker's GlobalWidth**)
-   and the MarginTop of the TetrisView = 50% of 200dp(**50% of GlobalDimension**),
-   MarginLeft of the TetrisView = 75% of 200dp(**75% of GlobalDimension**).
+   specifies that 
+     - 'unit' = 25% of 200dp(**TetrisClicker's GlobalWidth**),
+     - 'MarginTop of the TetrisView' = 50% of 200dp(**50% of GlobalDimension**),
+     - 'MarginLeft of the TetrisView' = 75% of 200dp(**75% of GlobalDimension**).
 
 ## Motivation
    This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers who Dance, Rap, Sing and Act only.
