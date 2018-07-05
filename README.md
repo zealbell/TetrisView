@@ -154,7 +154,7 @@ indicates why. the only special thing added here is the '~' found in the tetris-
 separation between each tetris-types to be fused together as a single shape for the TetrisView i.e. the example
 above is made up of a horizontal-tetris + vertical-tetris + horizontal-tetris and to expantiate the first tetris-type(horizontal-tetris)
 is 2blocks wide(i.e. 2x25% wide), the second is 3blocks tall(i.e. 3x25% tall) and the last is 1block wide(i.e. 1x25% wide).
-confused??? => take a quick glance above.
+confused? => take a quick glance above.
 
  - Here is Another one
 
