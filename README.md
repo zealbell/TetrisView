@@ -157,6 +157,7 @@ is 2blocks wide(i.e. 2x25% wide), the second is 3blocks tall(i.e. 3x25% tall) an
 confused??? => take a quick glance above.
 
  - Here is Another one
+
 ![Demo](shots/complex-shape-tetris1.png)
 ```xml
                        <linkersoft.blackpanther.blacktetris.TetrisView
@@ -178,12 +179,14 @@ confused??? => take a quick glance above.
                            </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
  - Another one
+
 ![Demo](shots/complex-shape-tetris2.png)
 
 ```xml
   app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"
 ```
  - Another one
+
 ![Demo](shots/complex-shape-tetris3.png)
 
 ```xml
