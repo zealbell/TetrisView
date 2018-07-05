@@ -100,7 +100,7 @@ This Library consists of two Major views:
   *in the example above implies*
    - **tetris** has a round edged curve of radius 4dp,
    - **tetris** is vertical and has a height **2x25%**[*block-size* x (p.o.sw)] = **50%**,
-   - **tetris** has topMargin in terms of *block-size* equal-to **0**(hence Y **=>** 0 x block-size = 0),
+   - **tetris** has topMargin in terms of *block-size* equal-to **0**,
    - **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
 
 
@@ -185,14 +185,14 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
 
                            </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
- - Another one
+ > Another one
 
 ![Demo](shots/complex-shape-tetris2.png)
 
 ```xml
   app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"
 ```
- - Another one
+ > Another one
 
 ![Demo](shots/complex-shape-tetris3.png)
 
@@ -210,7 +210,7 @@ you would like to create.
 
 that's where the **TetrisClick(ViewGroup$FrameLayout)** comes in. so that the clicks are handled correctly for TetrisViews
 whose bounding rectangles/boxes overlap also for positioning too.
-     - **Have Another one(>_<)**
+     > **Have Another one(>_<)**
                
 ```xml
                <linkersoft.blackpanther.blacktetris.TetrisClicker
@@ -352,8 +352,8 @@ whose bounding rectangles/boxes overlap also for positioning too.
 ```
 *above, specifies that* 
    - __*unit*__ = 25% of 200dp(**TetrisClicker's GlobalDimension**),
-   - __*MarginTop of the TetrisView*__ = 50% of 200dp(**50% of GlobalDimension**),
-   - __*MarginLeft of the TetrisView*__ = 75% of 200dp(**75% of GlobalDimension**).
+   - __*MarginTop of the TetrisView*__ = 50% of 200dp(**50% of TetrisClicker's GlobalDimension**),
+   - __*MarginLeft of the TetrisView*__ = 75% of 200dp(**75% of TetrisClicker's GlobalDimension**).
 
 ## Motivation
    This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers who Dance, Rap, Sing and Act only.
@@ -408,4 +408,4 @@ A NON ENCRYPTABLE STRING FORMAT PLAIN ENOUGH FOR ANY ONE TO SMELL,READ,DRINK OR 
 
 ```
 
-**!!!!!!!!!!!!!!!!!!!!!!!!!!!!Another one!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
+> **!!!!!!!!!!!!!!!!!!!!!!!!!!!!Another one!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
