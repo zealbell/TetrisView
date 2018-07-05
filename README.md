@@ -126,10 +126,9 @@ This Library consists of two Major views:
 
 ## Complex Tetrises
  **1. Complex Shapes**
+Here is a complex shape TetrisView containing an imageview
 
 ![Demo](shots/complex-shape-tetris0.png)
-
-Here is a complex shape TetrisView containing an imageview
 
 ```xml
           <linkersoft.blackpanther.blacktetris.TetrisView
