@@ -91,13 +91,13 @@ This Library consists of two Major views:
        - **type-of-tetris** => can either be '**vert-tetris**' or '**horz-tetris**' since tetris components can either be classified horizontal or vertical.
        - **padd** => the padds take the dimension of the radius(**dp/px**) hence only numeric values are required.
        - **tetris** => can be have more than a combination of vertical and horizontal tetrises(**jump down for examples**).
-  *furthermore*
+*furthermore*
 ```xml
      app:radius="4dp"
      app:tetris="[vert-tetris:4,2,2,2]2#0"
      app:unit="25%"
 ```
-  *the example above says*
+  *in the example above implies*
    - **tetris** has a round edged curve of radius 4dp,
    - **tetris** is vertical and has a height **2x25%**[*block-size* x (p.o.sw)] = **50%**,
    - **tetris** has topMargin in terms of *block-size* equal-to **0**(hence Y **=>** 0 x block-size = 0),
