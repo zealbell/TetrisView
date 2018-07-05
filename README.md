@@ -202,7 +202,7 @@ confused??? => take a quick glance above.
 
 that's where the **TetrisClick(ViewGroup$FrameLayout)** comes in. so that the clicks are handled correctly for TetrisViews
 whose bounding rectangles/boxes overlap also for positioning too.
-     - Have Another one(*_*):
+     - Have Another one(*_*)
                
 ```xml
                <linkersoft.blackpanther.blacktetris.TetrisClicker
