@@ -159,9 +159,9 @@ found in the tetris-attribute value, which indicates separation between each tet
 as a single shape for the TetrisView i.e. the example above is made up of a __*horizontal-tetris*__ + __*vertical-tetris*__
 + __*horizontal-tetris*__ and to expantiate *further*
   - the first tetris-type(**horizontal-tetris**) = 2blocks wide(**i.e. 2x25% wide**),
-  - the second is 3blocks tall(**i.e. 3x25% tall**),
-  - the last is 1block wide(**i.e. 1x25% wide**).
-*confused?* => take a quick glance above. __*still confused??*__ try playing with the code. 
+  - the second tetris-type(**vertical-tetris**) = 3blocks tall(**i.e. 3x25% tall**),
+  - the last tetris-type(**horizontal-tetris**) = 1block wide(**i.e. 1x25% wide**).
+> *confused?* => take a quick glance above. __*still confused??*__ try playing with the code. 
 
  - Here is Another one
 
