@@ -178,13 +178,15 @@ confused??? => take a quick glance above.
 
                            </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
+ - Another one
 ![Demo](shots/complex-shape-tetris2.png)
-          - Another one
+
 ```xml
   app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"
 ```
+ - Another one
 ![Demo](shots/complex-shape-tetris3.png)
-          - Another one
+
 ```xml
    [horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0
 ```
@@ -356,11 +358,11 @@ at any
 
 
 ## NOTE
-   #Do not forget to add different Id/Tags TetrisViews before assigning click-listeners the normal way
-   #Do not add too many and/ large TetrisViews simultaneously as it could lead to an OutOfMemory Error
-   #Call invalidate to TetrisView if Items inside update and drawing doesn't render updates/Fork the project
+   **#**Do not forget to add different Id/Tags TetrisViews before assigning click-listeners the normal way
+   **#**Do not add too many and/ large TetrisViews simultaneously as it could lead to an OutOfMemory Error
+   **#**Call invalidate to TetrisView if Items inside update and drawing doesn't render updates/Fork the project
     and improve[ ANY CONTRIBUTION TO THIS PROJECT WOULD BE WARMLY APPRECIATED] 
-   #please add your name to the README.md as a contributor before making commits to the project
+   **#**please add your name to the README.md as a contributor before making commits to the project
 
 
 ### License
