@@ -27,10 +27,10 @@ public class Line{
             Quadrant2=0x2,
             Quadrant3=0x3,
             Quadrant4=0x4;
-    private static final int scaleViaSTART=0x0,
-                            scaleViaMID=0x1,
-                            scaleViaEND=0x2;
-    private int x1,x2,y1,y2,midX,midY;
+    public static final int scaleViaSTART=0x0;
+    public static final int scaleViaMID=0x1;
+    public static final int scaleViaEND=0x2;
+    public int x1,x2,y1,y2,midX,midY;
     private int dx,dy,points[][];
     private boolean previously;
 
