@@ -15,14 +15,15 @@ This Library consists of two Major views:
   2. **TetrisClick(ViewGroup$FrameLayout)** which can contain TetrisView-kids/children and at the same time
                                         and handles click listeners according to the shape of each TetrisView rather
                                         than by its default bounding box/rectangle.
- - Each tetris view is made up of blocks which have equal dimensions.  
+Also - Each TetrisView is made up of blocks which have equal dimensions.  
 
 ## Quick Start
 
+```xml
    dependencies {
       compile 'com.github.54LiNKeR:TetrisView:1.1.0'
    }
-
+```
 
 ### Code Example
    **Spoiler-Alert**: You don't need to read through except you encounter problems testing. also
