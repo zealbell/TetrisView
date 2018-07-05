@@ -98,7 +98,7 @@ This Library consists of two Major views:
      app:tetris="[vert-tetris:4,2,2,2]2#0"
      app:unit="25%"
 ```
-   the example above says
+  *the example above says*
      -**tetris** has a curve radius of 4dp,
      -**tetris** is vertical and has a height 2x25%[block-size x (p.o.sw)] = **50%**,**tetris** has topMargin in terms of block-size equal-to **0**(hence Y=0 x block-size = 0),
      -**tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
@@ -198,7 +198,7 @@ confused? => take a quick glance above. still confused?? try playing with the co
    [horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0
 ```
 
-Ok so enough with DJ-Khaleying 'Another One', basically you get the idea. You are in charge of what tetrisables 
+Ok so enough with DJ-Khaleing '**Another One**', basically you get the idea. You are in charge of what tetrisables 
 you would like to create.
 
  **2. Complex Arrangements and Shapes**
@@ -327,14 +327,14 @@ whose bounding rectangles/boxes overlap also for positioning too.
     app:percentWidth="100%"
     app:percentHeight="100%"
 ```
-at
+*at*
 ```xml
   <..TetrisClicker>..</..>
 ```
-   specifies that 
-   -- 'GlobalDimension' for the TetrisClicker = 200dp
-   -- 'Width of the TetrisClicker' = 100% of 200dp(**100% of GlobalDimension**),
-   -- 'Height of the TetrisClicker' = 100% of 200dp(**100% of GlobalDimension**).
+*specifies that* 
+  - 'GlobalDimension' for the TetrisClicker = 200dp
+  - 'Width of the TetrisClicker' = 100% of 200dp(**100% of GlobalDimension**),
+  - 'Height of the TetrisClicker' = 100% of 200dp(**100% of GlobalDimension**).
 
 **ALSO**
    Automatically any TetrisView placed in the TetrisClicker inherits the GlobalHeight as it's
@@ -344,14 +344,14 @@ at
    app:percentMarginTop="50%"
    app:percentMarginLeft="75%"
 ```
-at any
+*at any*
 ```xml
   <..TetrisView>..</..>
 ```
-   specifies that 
-     - - 'unit' = 25% of 200dp(**TetrisClicker's GlobalWidth**),
-     - - 'MarginTop of the TetrisView' = 50% of 200dp(**50% of GlobalDimension**),
-     - - 'MarginLeft of the TetrisView' = 75% of 200dp(**75% of GlobalDimension**).
+*specifies that* 
+   - 'unit' = 25% of 200dp(**TetrisClicker's GlobalWidth**),
+   - 'MarginTop of the TetrisView' = 50% of 200dp(**50% of GlobalDimension**),
+   - 'MarginLeft of the TetrisView' = 75% of 200dp(**75% of GlobalDimension**).
 
 ## Motivation
    This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers who Dance, Rap, Sing and Act only.
