@@ -12,8 +12,8 @@ This Library consists of two Major views:
                                        a composite example is a TetrisView with a single framelayout containing
                                        an imageview and a textview
                                     
-  2. **TetrisClick(ViewGroup$FrameLayout)** which can contain TetrisView-kids/children and at the same time
-                                        and handles click listeners according to the shape of each TetrisView rather
+  2. **TetrisClick(ViewGroup$FrameLayout)** which can contain TetrisView kids/children and at the same time
+                                        and handles click listeners according to the shape of each TetrisView-shape rather
                                         than by its default bounding box/rectangle.
 > Also - Each TetrisView is made up of blocks which have equal dimensions.  
 
@@ -98,8 +98,9 @@ This Library consists of two Major views:
      app:unit="25%"
 ```
   *the example above says*
-   - **tetris** has a curve radius of 4dp,
-   - **tetris** is vertical and has a height 2x25%[block-size x (p.o.sw)] = **50%**,**tetris** has topMargin in terms of block-size equal-to **0**(hence Y=0 x block-size = 0),
+   - **tetris** has a round edged curve of radius 4dp,
+   - **tetris** is vertical and has a height 2x25%[*block-size* x (p.o.sw)] = **50%**,
+   - **tetris** has topMargin in terms of *block-size* equal-to **0**(hence Y=0 x block-size = 0),
    - **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
 
 
@@ -199,7 +200,7 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
    [horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0
 ```
 
-Ok so enough with DJ-Khaleing __*Another One*__, basically you get the idea. You are in charge of what tetrisables 
+Ok so enough with DJ-Khaleding __*Another One*__, basically you get the idea. You are in charge of what tetrisables 
 you would like to create.
 
  **2. Complex Arrangements and Shapes**
@@ -209,7 +210,7 @@ you would like to create.
 
 that's where the **TetrisClick(ViewGroup$FrameLayout)** comes in. so that the clicks are handled correctly for TetrisViews
 whose bounding rectangles/boxes overlap also for positioning too.
-     - Have Another one('*'_'*')
+     - **Have Another one(>_<)**
                
 ```xml
                <linkersoft.blackpanther.blacktetris.TetrisClicker
@@ -406,3 +407,5 @@ A NON ENCRYPTABLE STRING FORMAT PLAIN ENOUGH FOR ANY ONE TO SMELL,READ,DRINK OR 
 
 
 ```
+
+**Another one**
