@@ -87,9 +87,9 @@ This Library consists of two Major views:
 
 **XML Attributes Butchered**
    - explaining further
-  **name-of-tetris** => can either be '**vert-tetris**' or '**horz-tetris**' since tetris components can either be classified horizontal or vertical
-  ;**padd** => the padds take the dimension of the radius(**dp/px**) hence only numeric values are required.
-  ;**tetris** => can be have more than a combination of vertical and horizontal tetrises(see below).
+  **name-of-tetris** => can either be '**vert-tetris**' or '**horz-tetris**' since tetris components can either be classified horizontal or vertical;
+   **padd** => the padds take the dimension of the radius(**dp/px**) hence only numeric values are required;
+   **tetris** => can be have more than a combination of vertical and horizontal tetrises(see below).
   *furthermore*
 ```xml
      app:radius="4dp"
