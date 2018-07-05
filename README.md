@@ -373,7 +373,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
   and improve[ ANY CONTRIBUTION TO THIS PROJECT WOULD BE WARMLY APPRECIATED]
  - please add your name to the README.md as a contributor before making commits to the project
  - try playing around with the **paddDistortion** attribute(via the xml) in order to fully understand what it does,although
-   in my opinion it's just a useless feature just to make the 'view-xml' way bulkier.(well if you don't think so... It's gr8 
+   in my opinion it's just a useless feature just to make the 'xml-view' way bulkier.(well if you don't think so... It's gr8 
    we don't think alike). **Have Aother one(-_-) **
 
 ### License
