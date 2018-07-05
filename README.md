@@ -331,9 +331,10 @@ at
 ```xml
   <..TetrisClicker>..</..>
 ```
-   specifies the GlobalDimension for the TetrisClicker to be 200dp
-   and the Width of the TetrisClicker = 100% of 200dp(**100% of GlobalDimension**),
-   Height of the TetrisClicker = 100% of 200dp(**100% of GlobalDimension**).
+   specifies that 
+   -- 'GlobalDimension' for the TetrisClicker = 200dp
+   -- 'Width of the TetrisClicker' = 100% of 200dp(**100% of GlobalDimension**),
+   -- 'Height of the TetrisClicker' = 100% of 200dp(**100% of GlobalDimension**).
 
 **ALSO**
    Automatically any TetrisView placed in the TetrisClicker inherits the GlobalHeight as it's
@@ -348,9 +349,9 @@ at any
   <..TetrisView>..</..>
 ```
    specifies that 
-     - 'unit' = 25% of 200dp(**TetrisClicker's GlobalWidth**),
-     - 'MarginTop of the TetrisView' = 50% of 200dp(**50% of GlobalDimension**),
-     - 'MarginLeft of the TetrisView' = 75% of 200dp(**75% of GlobalDimension**).
+     - - 'unit' = 25% of 200dp(**TetrisClicker's GlobalWidth**),
+     - - 'MarginTop of the TetrisView' = 50% of 200dp(**50% of GlobalDimension**),
+     - - 'MarginLeft of the TetrisView' = 75% of 200dp(**75% of GlobalDimension**).
 
 ## Motivation
    This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers who Dance, Rap, Sing and Act only.
