@@ -156,7 +156,7 @@ above is made up of a horizontal-tetris + vertical-tetris + horizontal-tetris an
 is 2blocks wide(i.e. 2x25% wide), the second is 3blocks tall(i.e. 3x25% tall) and the last is 1block wide(i.e. 1x25% wide).
 confused??? => take a quick glance above.
 
-         - Here is Another one
+ - Here is Another one
 ![Demo](shots/complex-shape-tetris1.png)
 ```xml
                        <linkersoft.blackpanther.blacktetris.TetrisView
@@ -193,7 +193,7 @@ confused??? => take a quick glance above.
     Ok so enough with DJ-Khaleying 'Another One', basically you get the idea. You are in charge of what tetrisables you would like
     to create.
 
- **#2. Complex Arrangements and Shapes**
+ **2. Complex Arrangements and Shapes**
         In situations you really want to stack up your TetrisViews like a real TetrisLock as per the way the Game is aimed at locking the
         right objects to plug into one another correctly. I mean something like this:
 
