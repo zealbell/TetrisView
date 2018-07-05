@@ -106,7 +106,7 @@ This Library consists of two Major views:
 
  ## Activity
 
-  - Incase you want to change the Tetris @runtime in your Activity here's how
+  > Incase you want to change the Tetris @runtime in your Activity here's how
 ```java
 
   public class THANOS extends AppCompatActivity {
@@ -210,7 +210,8 @@ you would like to create.
 
 that's where the **TetrisClick(ViewGroup$FrameLayout)** comes in. so that the clicks are handled correctly for TetrisViews
 whose bounding rectangles/boxes overlap also for positioning too.
-     > **Have Another one(>_<)**
+
+> **Have Another one(>_<)**
                
 ```xml
                <linkersoft.blackpanther.blacktetris.TetrisClicker
