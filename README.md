@@ -8,8 +8,10 @@ and as the name implies you can construct your views to be arranged just like in
 ## Synopsis
 This Library consists of two Major views: 
   1. **TetrisView(ViewGroup$FrameLayout)** which throws a BastardException if more than a child is added.
-                                       a simple example is a TetrisView with a single view such as an imageview,
-                                       a composite example is a TetrisView with a single framelayout containing
+                                       a simple example is 
+                                       - a TetrisView with a single view such as an imageview,
+                                       a composite example is 
+                                       - a TetrisView with a single framelayout containing
                                        an imageview and a textview
                                     
   2. **TetrisClick(ViewGroup$FrameLayout)** which can contain TetrisView kids/children and at the same time
