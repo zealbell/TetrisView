@@ -82,7 +82,7 @@ This Library consists of two Major views:
 ```
 **XML Attributes Syntax**
 
-   - **unit:** "*the percentage of the device screenwidth(p.o.sw) to be used for each block that makes up the tetris(**this is the block-size dimension**)*"
+   - **unit:** "*the percentage of the device screenwidth(p.o.sw) to be used for each block that makes up the tetris(**this is the block-size**)*"
    - **radius:** "*radius of your choice in dp/px*"
    - **tetris:** "[*type-of-tetris:left-pad,top-pad,right-pad,bottom-pad*]*block-size*#*topMargin in terms of block-size*"
 
