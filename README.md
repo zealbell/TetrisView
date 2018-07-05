@@ -81,11 +81,10 @@ This Library consists of two Major views:
     </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
 **XML Attributes Syntax**
-```xml
-    unit:"the percentage of the device screenwidth(p.o.sw) to be used for each block that makes up the tetris"
-    radius:"radius of your choice in dp/px"
-    tetris: "[type-of-tetris:left-pad,top-pad,right-pad,bottom-pad]block-size#topMargin in terms of block-size"
-```
+
+   - **unit:** "*the percentage of the device screenwidth(p.o.sw) to be used for each block that makes up the tetris*"
+   - **radius:** "*radius of your choice in dp/px*"
+   - **tetris:** "[*type-of-tetris:left-pad,top-pad,right-pad,bottom-pad*]*block-size*#*topMargin in terms of block-size*"
 
 **XML Attributes Butchered**
    - explaining further
@@ -99,9 +98,9 @@ This Library consists of two Major views:
      app:unit="25%"
 ```
   *the example above says*
-     - **tetris** has a curve radius of 4dp,
-     - **tetris** is vertical and has a height 2x25%[block-size x (p.o.sw)] = **50%**,**tetris** has topMargin in terms of block-size equal-to **0**(hence Y=0 x block-size = 0),
-     - **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
+   - **tetris** has a curve radius of 4dp,
+   - **tetris** is vertical and has a height 2x25%[block-size x (p.o.sw)] = **50%**,**tetris** has topMargin in terms of block-size equal-to **0**(hence Y=0 x block-size = 0),
+   - **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
 
 
  ## Activity
