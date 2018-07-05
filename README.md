@@ -100,7 +100,7 @@ This Library consists of two Major views:
    **tetris** has topMargin in terms of number-of-blocks equal-to **0**(hence Y=0) **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
 
 
- ###Activity
+ ### Activity
 
   - Incase you want to change the Tetris @runtime in your Activity here's how
 ```java
