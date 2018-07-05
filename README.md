@@ -312,7 +312,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
                
 ```
 
-##NOTE
+**NOTE**
 
 ```xml
     app:GlobalWidth="200dp"
@@ -320,13 +320,13 @@ whose bounding rectangles/boxes overlap also for positioning too.
     app:percentHeight="100%"
 ```
 at
-```xml <...TetrisClicker>...</...>
+```xml <..TetrisClicker>..</..>
 ```
    specifies the GlobalDimension for the TetrisClicker to be 200dp
    and the Width of the TetrisClicker = 100% of 200dp,
    Height of the TetrisClicker = 100% of 200dp
 
-##ALSO
+**ALSO**
    Automatically any TetrisView placed in the TetrisClicker inherits the GlobalHeight as it's
    unit reference dimension instead of the screen-width of the device hence
 ```xml
@@ -335,7 +335,7 @@ at
    app:percentMarginLeft="75%"
 ```
 at any
-```xml <...TetrisView>...</...>
+```xml <..TetrisView>..</..>
 ```
    specifies that unit = 25% of 200dp(TetrisClicker's GlobalWidth)
    and the MarginTop of the TetrisView = 50% of 200dp,
