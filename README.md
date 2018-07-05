@@ -3,18 +3,19 @@
 TetrisView
 =============
 A very creative UI, that displays a simple/compound view in any tetris-shape adding some magic with a tasteful curve all around.
-and as the name implies you can construct your views to be arranged just like the tetris game.
+and as the name implies you can construct your views to be arranged just like in any tetris game.
 
 ## Synopsis
 This Library consists of two Major views:
   1. **TetrisView(ViewGroup$FrameLayout)** which throws a BastardException if more than a child is added.
-                                       a simple example is a TetrisView with a single view such as an imageview
+                                       a simple example is a TetrisView with a single view such as an imageview,
                                        a composite example is a TetrisView with a single framelayout containing
                                        an imageview and a textview
                                     
   2. **TetrisClick(ViewGroup$FrameLayout)** which can contain TetrisView-kids/children and at the same time
                                         and handles click listeners according to the shape of each TetrisView rather
-                                        than by its default bounding box/rectangle
+                                        than by its default bounding box/rectangle.
+ - Each tetris view is made up of blocks which have equal dimensions.  
 
 ## Quick Start
 
@@ -55,7 +56,7 @@ This Library consists of two Major views:
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:radius="4dp"
-        app:tetris="[vert-tetris:0,0,0,0]2#0"   //N.B => [vert-tetris:0,0,0,0] = [vert-tetris]
+        app:tetris="[vert-tetris:0,0,0,0]2#0"   //N.B => [vert-tetris:0,0,0,0] is the same as [vert-tetris]
         app:unit="25%">
 
     <FrameLayout
@@ -80,27 +81,26 @@ This Library consists of two Major views:
 ```
 **XML Attributes Syntax**
 ```xml
-    unit:"the percentage of the screen-width(p.o.sw) for each block that makes up the tetris"
+    unit:"the percentage of the device screenwidth(p.o.sw) to be used for each block that makes up the tetris"
     radius:"radius of your choice in dp/px"
-    tetris: "[name-of-tetris:left-pad,top-pad,right-pad,bottom-pad]number-of-blocks#topMargin in terms of number-of-blocks"
+    tetris: "[type-of-tetris:left-pad,top-pad,right-pad,bottom-pad]block-size#topMargin in terms of block-size"
 ```
 
 **XML Attributes Butchered**
    - explaining further
-  **name-of-tetris** => can either be '**vert-tetris**' or '**horz-tetris**' since tetris components can either be classified horizontal or vertical;
-   **padd** => the padds take the dimension of the radius(**dp/px**) hence only numeric values are required;
-   **tetris** => can be have more than a combination of vertical and horizontal tetrises(see below).
+       - **type-of-tetris** => can either be '**vert-tetris**' or '**horz-tetris**' since tetris components can either be classified horizontal or vertical;
+       - **padd** => the padds take the dimension of the radius(**dp/px**) hence only numeric values are required;
+       - **tetris** => can be have more than a combination of vertical and horizontal tetrises(jump down for examples).
   *furthermore*
 ```xml
      app:radius="4dp"
      app:tetris="[vert-tetris:4,2,2,2]2#0"
      app:unit="25%"
 ```
-   the example above says **tetris** has a curve radius of 4dp, **tetris** is vertical and has a height 2x25%[number-of-blocks x (p.o.sw)] = **50%**,
-   **tetris** has topMargin in terms of number-of-blocks equal-to **0**(hence Y=0) **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
+   the example above says **tetris** has a curve radius of 4dp, **tetris** is vertical and has a height 2x25%[block-size x (p.o.sw)] = **50%**,**tetris** has topMargin in terms of block-size equal-to **0**(hence Y=0 x block-size = 0) **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
 
 
- ### Activity
+ ## Activity
 
   - Incase you want to change the Tetris @runtime in your Activity here's how
 ```java
@@ -149,12 +149,13 @@ Here is a complex shape TetrisView containing an imageview
               </linkersoft.blackpanther.blacktetris.TetrisView>
 ```
 
-in case you were wondering why the 'topMargin in terms of number-of-blocks' was needed, this example explicitly
-indicates why. the only special thing added here is the '~' found in the tetris-attribute value, which indicates
-separation between each tetris-types to be fused together as a single shape for the TetrisView i.e. the example
-above is made up of a horizontal-tetris + vertical-tetris + horizontal-tetris and to expantiate the first tetris-type(horizontal-tetris)
-is 2blocks wide(i.e. 2x25% wide), the second is 3blocks tall(i.e. 3x25% tall) and the last is 1block wide(i.e. 1x25% wide).
-confused? => take a quick glance above.
+in case you were wondering why the 'topMargin in terms of block-size' was needed, this example explicitly
+indicates why.(try twitching its values to better understand). The only special thing added here is the '~'
+found in the tetris-attribute value, which indicates separation between each tetris-types to be fused together
+as a single shape for the TetrisView i.e. the example above is made up of a horizontal-tetris + vertical-tetris
++ horizontal-tetris and to expantiate the first tetris-type(horizontal-tetris)is 2blocks wide(i.e. 2x25% wide),
+the second is 3blocks tall(i.e. 3x25% tall) and the last is 1block wide(i.e. 1x25% wide).
+confused? => take a quick glance above. still confused?? try playing with the code. 
 
  - Here is Another one
 
@@ -193,18 +194,17 @@ confused? => take a quick glance above.
    [horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0
 ```
 
-    Ok so enough with DJ-Khaleying 'Another One', basically you get the idea. You are in charge of what tetrisables you would like
-    to create.
+Ok so enough with DJ-Khaleying 'Another One', basically you get the idea. You are in charge of what tetrisables 
+you would like to create.
 
  **2. Complex Arrangements and Shapes**
-        In situations you really want to stack up your TetrisViews like a real TetrisLock as per the way the Game is aimed at locking the
-        right objects to plug into one another correctly. I mean something like this:
+        In situations you really want to stack up your TetrisViews like a real TetrisLock as per the way the Game is aimed at locking/plugging the right objects into one another correctly. I mean something like this:
 
 ![Demo](shots/complex-arrangement-tetris.png)
 
 that's where the **TetrisClick(ViewGroup$FrameLayout)** comes in. so that the clicks are handled correctly for TetrisViews
 whose bounding rectangles/boxes overlap also for positioning too.
-     - Have Another one(*_*)
+     - Have Another one(*_**)
                
 ```xml
                <linkersoft.blackpanther.blacktetris.TetrisClicker
@@ -328,8 +328,8 @@ at
   <..TetrisClicker>..</..>
 ```
    specifies the GlobalDimension for the TetrisClicker to be 200dp
-   and the Width of the TetrisClicker = 100% of 200dp,
-   Height of the TetrisClicker = 100% of 200dp
+   and the Width of the TetrisClicker = 100% of 200dp(**100% of GlobalDimension**),
+   Height of the TetrisClicker = 100% of 200dp(**100% of GlobalDimension**).
 
 **ALSO**
    Automatically any TetrisView placed in the TetrisClicker inherits the GlobalHeight as it's
@@ -343,18 +343,15 @@ at any
 ```xml
   <..TetrisView>..</..>
 ```
-   specifies that unit = 25% of 200dp(TetrisClicker's GlobalWidth)
-   and the MarginTop of the TetrisView = 50% of 200dp,
-   MarginLeft of the TetrisView = 75% of 200dp
+   specifies that unit = 25% of 200dp(**TetrisClicker's GlobalWidth**)
+   and the MarginTop of the TetrisView = 50% of 200dp(**50% of GlobalDimension**),
+   MarginLeft of the TetrisView = 75% of 200dp(**75% of GlobalDimension**).
 
 ## Motivation
-   This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other
-   great programmers who Dance, Rap, Sing and Act only.
+   This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers who Dance, Rap, Sing and Act only.
 
 ## Installation
-   if the compile link provided above **@Quick Start** fails to work you may try other alternatives such as installing with an empty Coca-Cola bottle
-   after drinking. pull the bottle's repo before forking the bottle and should this fail search on google for the key phrase '2.39 niosrev ?siht od I did yhw'
-   3-times and see what happens.
+   if the compile link provided above **@Quick Start** fails to work you may try other alternatives such as installing with an empty Coca-Cola bottle after drinking. pull the bottle's repo before forking the bottle and should this fail search on google for the key phrase '2.39 niosrev ?siht od I did yhw' 3-times and see what happens.
 
 ## Contributors
 
@@ -369,7 +366,7 @@ at any
  - please add your name to the README.md as a contributor before making commits to the project
  - try playing around with the **paddDistortion** attribute(via the xml) in order to fully understand what it does,although
    in my opinion it's just a useless feature just to make the 'view-xml' way bulkier.(well if you don't think so... It's gr8 
-   we don't think alike). **Have Aother one(-_-) !**
+   we don't think alike). **Have Aother one(-_-) **
 
 ### License
 
