@@ -356,11 +356,11 @@ at any
 
 
 ## NOTE
-   *Do not forget to add different Id/Tags TetrisViews before assigning click-listeners the normal way
-   *Do not add too many and/ large TetrisViews simultaneously as it could lead to an OutOfMemory Error
-   *Call invalidate to TetrisView if Items inside update and drawing doesn't render updates/Fork the project
+   #Do not forget to add different Id/Tags TetrisViews before assigning click-listeners the normal way
+   #Do not add too many and/ large TetrisViews simultaneously as it could lead to an OutOfMemory Error
+   #Call invalidate to TetrisView if Items inside update and drawing doesn't render updates/Fork the project
     and improve[ ANY CONTRIBUTION TO THIS PROJECT WOULD BE WARMLY APPRECIATED] 
-   *please add your name to the README.md as a contributor before making commits to the project 
+   #please add your name to the README.md as a contributor before making commits to the project
 
 
 ### License
