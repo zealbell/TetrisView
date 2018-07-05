@@ -50,7 +50,7 @@ This Library consists of two Major views:
 ```
 
   Here is an example of a compound TetrisView containing an imageview and a basic view
-  in a framelayout(it's a simple modification to the above)
+  in a framelayout(**it's a simple modification to the above**)
 
 ```xml
     <linkersoft.blackpanther.blacktetris.TetrisView
@@ -82,7 +82,7 @@ This Library consists of two Major views:
 ```
 **XML Attributes Syntax**
 
-   - **unit:** "*the percentage of the device screenwidth(p.o.sw) to be used for each block that makes up the tetris*"
+   - **unit:** "*the percentage of the device screenwidth(p.o.sw) to be used for each block that makes up the tetris(**this is the block-size dimension**)*"
    - **radius:** "*radius of your choice in dp/px*"
    - **tetris:** "[*type-of-tetris:left-pad,top-pad,right-pad,bottom-pad*]*block-size*#*topMargin in terms of block-size*"
 
@@ -90,7 +90,7 @@ This Library consists of two Major views:
    - explaining further
        - **type-of-tetris** => can either be '**vert-tetris**' or '**horz-tetris**' since tetris components can either be classified horizontal or vertical.
        - **padd** => the padds take the dimension of the radius(**dp/px**) hence only numeric values are required.
-       - **tetris** => can be have more than a combination of vertical and horizontal tetrises(jump down for examples).
+       - **tetris** => can be have more than a combination of vertical and horizontal tetrises(**jump down for examples**).
   *furthermore*
 ```xml
      app:radius="4dp"
@@ -99,8 +99,8 @@ This Library consists of two Major views:
 ```
   *the example above says*
    - **tetris** has a round edged curve of radius 4dp,
-   - **tetris** is vertical and has a height 2x25%[*block-size* x (p.o.sw)] = **50%**,
-   - **tetris** has topMargin in terms of *block-size* equal-to **0**(hence Y=0 x block-size = 0),
+   - **tetris** is vertical and has a height **2x25%**[*block-size* x (p.o.sw)] = **50%**,
+   - **tetris** has topMargin in terms of *block-size* equal-to **0**(hence Y **=>** 0 x block-size = 0),
    - **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
 
 
@@ -156,8 +156,8 @@ Here is a complex shape TetrisView containing an imageview
 in case you were wondering why the __*topMargin in terms of block-size*__ was needed, this example explicitly
 indicates why.(try twitching its values to better understand). The only special thing added here is the '__*~*__'
 found in the tetris-attribute value, which indicates separation between each tetris-types to be fused together
-as a single shape for the TetrisView i.e. the example above is made up of a __*horizontal-tetris*__ + __*vertical-tetris*__
-+ __*horizontal-tetris*__ and to expantiate *further*
+as a single shape for the TetrisView i.e. the example above is made up of a __*horizontal-tetris*__ + __*vertical-tetris*__ + __*horizontal-tetris*__. 
+> *expantiating further*
   - the first tetris-type(**horizontal-tetris**) = 2blocks wide(**i.e. 2x25% wide**),
   - the second tetris-type(**vertical-tetris**) = 3blocks tall(**i.e. 3x25% tall**),
   - the last tetris-type(**horizontal-tetris**) = 1block wide(**i.e. 1x25% wide**).
@@ -216,7 +216,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
                <linkersoft.blackpanther.blacktetris.TetrisClicker
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   app:GlobalWidth="200dp"
+                   app:GlobalDimension="200dp"
                    app:percentWidth="100%"
                    app:percentHeight="100%"
                    android:background="#ffffff">
@@ -325,7 +325,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
 **NOTE**
 
 ```xml
-    app:GlobalWidth="200dp"
+    app:GlobalDimension="200dp"
     app:percentWidth="100%"
     app:percentHeight="100%"
 ```
@@ -339,8 +339,8 @@ whose bounding rectangles/boxes overlap also for positioning too.
   - __*Height of the TetrisClicker*__ = 100% of 200dp(**100% of GlobalDimension**).
 
 **ALSO**
-   Automatically any TetrisView placed in the TetrisClicker inherits the GlobalHeight as it's
-   unit reference dimension instead of the screen-width of the device hence
+   Automatically any TetrisView placed in the TetrisClicker inherits the GlobalDimension as it's
+   unit reference instead of the screen-width of the device thus 
 ```xml
    app:unit="25%"
    app:percentMarginTop="50%"
@@ -350,8 +350,8 @@ whose bounding rectangles/boxes overlap also for positioning too.
 ```xml
   <..TetrisView>..</..>
 ```
-*specifies that* 
-   - __*unit*__ = 25% of 200dp(**TetrisClicker's GlobalWidth**),
+*above, specifies that* 
+   - __*unit*__ = 25% of 200dp(**TetrisClicker's GlobalDimension**),
    - __*MarginTop of the TetrisView*__ = 50% of 200dp(**50% of GlobalDimension**),
    - __*MarginLeft of the TetrisView*__ = 75% of 200dp(**75% of GlobalDimension**).
 
@@ -408,4 +408,4 @@ A NON ENCRYPTABLE STRING FORMAT PLAIN ENOUGH FOR ANY ONE TO SMELL,READ,DRINK OR 
 
 ```
 
-**Another one**
+**!!!!!!!!!!!!!!!!!!!!!!!!!!!!Another one!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
