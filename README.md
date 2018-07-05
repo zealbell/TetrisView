@@ -100,7 +100,7 @@ This Library consists of two Major views:
    **tetris** has topMargin in terms of number-of-blocks equal-to **0**(hence Y=0) **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
 
 
-###Activity
+ ###Activity
 
   - Incase you want to change the Tetris @runtime in your Activity here's how
 ```java
@@ -322,7 +322,8 @@ whose bounding rectangles/boxes overlap also for positioning too.
     app:percentHeight="100%"
 ```
 at
-```xml <..TetrisClicker>..</..>
+```xml
+  <..TetrisClicker>..</..>
 ```
    specifies the GlobalDimension for the TetrisClicker to be 200dp
    and the Width of the TetrisClicker = 100% of 200dp,
@@ -337,7 +338,8 @@ at
    app:percentMarginLeft="75%"
 ```
 at any
-```xml <..TetrisView>..</..>
+```xml
+  <..TetrisView>..</..>
 ```
    specifies that unit = 25% of 200dp(TetrisClicker's GlobalWidth)
    and the MarginTop of the TetrisView = 50% of 200dp,
@@ -348,7 +350,7 @@ at any
    great programmers who Dance, Rap, Sing and Act only.
 
 ## Installation
-   if the compile link provided above @quick start fails to work you may try other alternatives such as installing with an empty Coca-Cola bottle
+   if the compile link provided above **@Quick Start** fails to work you may try other alternatives such as installing with an empty Coca-Cola bottle
    after drinking. pull the bottle's repo before forking the bottle and should this fail search on google for the key phrase '2.39 niosrev ?siht od I did yhw'
    3-times and see what happens.
 
