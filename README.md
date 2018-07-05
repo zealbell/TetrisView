@@ -38,7 +38,7 @@ This Library consists of two Major views:
         android:layout_height="wrap_content"
         app:radius="4dp"
         app:tetris="[vert-tetris]2#0"
-        app:blocksize="25%">
+        app:blocksize="50dp">
 
           <ImageView
             android:layout_width="match_parent"
@@ -58,7 +58,7 @@ This Library consists of two Major views:
         android:layout_height="wrap_content"
         app:radius="4dp"
         app:tetris="[vert-tetris:0,0,0,0]2#0"   //N.B => [vert-tetris:0,0,0,0] is the same as [vert-tetris]
-        app:blocksize="25%">
+        app:blocksize="100px">
 
     <FrameLayout
        android:layout_width="match_parent"
@@ -82,9 +82,16 @@ This Library consists of two Major views:
 ```
 **XML Attributes Syntax**
 
-   - **blocksize:** "*the percentage of the device screenwidth(p.o.sw) to be used for each block that makes up the tetris(**this is the block-size**)*"
+   - **blocksize:** "*the size to be used for each block that makes up the tetris*"
+      - if value is in **%** the size is whatever percentage of the device screenwidth(p.o.sw).
+      - if value is in **dp** the size is exactly.
+      - if value is in **px** the size is exactly.
    - **radius:** "*radius of your choice in dp/px*"
    - **tetris:** "[*type-of-tetris:left-pad,top-pad,right-pad,bottom-pad*]*block-size*#*topMargin in terms of block-size*"
+   
+   > if block-size is in **%** xml-view might not be rendered in Android-Studio but running on a device/emulator will
+   > draw the view(this is due to the fact that the screen-width of the device is queried from the DisplayMetrics in
+   > it's constructor) 
 
 **XML Attributes Butchered**
    - explaining further
@@ -97,11 +104,22 @@ This Library consists of two Major views:
      app:tetris="[vert-tetris:4,2,2,2]2#0"
      app:blocksize="25%"
 ```
-  *in the example above implies*
+  *in the example above,implies*
    - **tetris** has a round edged curve of radius 4dp,
-   - **tetris** is vertical and has a height **2x25%**[*block-size* x (p.o.sw)] = **50%**,
+   - **tetris** is vertical and has a height of **2x25%**[*block-size* x (p.o.sw)] = **50%**,
    - **tetris** has topMargin in terms of *block-size* equal-to **0**,
    - **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
+   *also*
+```xml
+     app:radius="8dp"
+     app:tetris="[vert-tetris:0,0,2,2]2#3"
+     app:blocksize="25dp"
+```
+  *above,implies*
+   - **tetris** has a round edged curve of radius 8dp,
+   - **tetris** is vertical and has a height of **25dp**[*block-size*],
+   - **tetris** has topMargin in terms of *block-size* equal-to **3x25dp** = **75dp**,
+   - **tetris** is further padded by **0dp**,**0dp**,**2dp** and **2dp** (left,top,bottom,right).
 
 
  ## Activity
@@ -173,8 +191,9 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
                               android:layout_gravity="center"
                               android:id="@+id/D"
                               app:radius="4dp"
-                              app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[vert-tetris:-2,2,2,2]3#1~[vert-tetris:-2,2,2,2]2#1"
-                              app:blocksize="25%"
+                              app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0
+                                          ~[vert-tetris:-2,2,2,2]3#1~[vert-tetris:-2,2,2,2]2#1"
+                              app:blocksize="50dp"
                              >
 
                               <ImageView
