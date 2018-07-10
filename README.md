@@ -185,24 +185,24 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
 
 ![Demo](shots/complex-shape-tetris1.png)
 ```xml
-                       <linkersoft.blackpanther.blacktetris.TetrisView
-                              android:layout_width="wrap_content"
-                              android:layout_height="wrap_content"
-                              android:layout_gravity="center"
-                              android:id="@+id/D"
-                              app:radius="4dp"
-                              app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0
-                                          ~[vert-tetris:-2,2,2,2]3#1~[vert-tetris:-2,2,2,2]2#1"
-                              app:blocksize="50dp"
-                             >
+    <linkersoft.blackpanther.blacktetris.TetrisView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/D"
+        app:radius="4dp"
+        app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[vert-tetris:-2,2,2,2]3#1~[vert-tetris:-2,2,2,2]2#1"
+        app:blocksize="50dp"
+        >
 
-                              <ImageView
-                                 android:layout_width="match_parent"
-                                 android:layout_height="match_parent"
-                                 android:scaleType="centerCrop"
-                                 android:src="@drawable/blackpanther"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blackpanther"/>
 
-                           </linkersoft.blackpanther.blacktetris.TetrisView>
+    </linkersoft.blackpanther.blacktetris.TetrisView>
+
 ```
  > Another one
 
