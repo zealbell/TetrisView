@@ -132,7 +132,7 @@ This Library consists of two Major views:
   String pMarginLeft="0%";
   String pMarginTop="0%";
   boolean paddDistortion=false;
-  String tetris="[horz-tetris:4,2,-2,2]2#1~[vert-tetris:2,2,2,2]3#0~[horz-tetris:-2,2,4,2]1#0";
+  String tetris="[horz-tetris]2#1";
   String blocksizes="20%";
   String radius="8dp";
 
