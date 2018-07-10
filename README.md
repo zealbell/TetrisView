@@ -140,7 +140,7 @@ This Library consists of two Major views:
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.TonyStark);
-        TetrisView blackpanther = (TetrisView) findViewById(R.id.tetrisview);
+        TetrisView blackpanther = (TetrisView) findViewById(R.id.Tchalla);
         blackpanther.resetTetris(pMarginLeft, pMarginTop, paddDistortion, tetris, blocksizes, tradius);
     }
 }
@@ -216,7 +216,7 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
 ![Demo](shots/complex-shape-tetris3.png)
 
 ```xml
-   [horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0
+   app:tetris="[horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0"
 ```
 
 Ok so enough with DJ-Khaleding __*Another One*__, basically you get the idea. You are in charge of what tetrisables 
