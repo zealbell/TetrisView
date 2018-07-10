@@ -195,7 +195,7 @@ public class TetrisView extends FrameLayout {
         }setBlackPanther(tetris,blocksize,radius,context);
     }
     public void resetTetris(String pMarginLeft, String pMarginTop, boolean paddDistortion, String tetris, String blocksizes, String tradius){
-        if(context==null)throw new IllegalStateException("never called resetTetris() too early! the world could blow up!!!");
+        if(context==null)throw new IllegalStateException("never call resetTetris() too early! the world could blow up!!!");
         setTetris(pMarginLeft,pMarginTop,paddDistortion,tetris,blocksizes,tradius,context);
         requestLayout();
     }
