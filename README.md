@@ -124,7 +124,7 @@ This Library consists of two Major views:
 
  ## Activity
 
-  > Incase you want to change the Tetris @runtime in your Activity here's how
+  > Incase you want to change the Tetris @runtime in your Activity here's how:
 ```java
 
   public class THANOS extends AppCompatActivity {
@@ -159,8 +159,7 @@ Here is a complex shape TetrisView containing an imageview
                  android:layout_gravity="center"
                  app:radius="4dp"
                  app:tetris="[horz-tetris:4,2,-2,2]2#1~[vert-tetris:2,2,2,2]3#0~[horz-tetris:-2,2,4,2]1#0"
-                 app:blocksize="25%"
-                >
+                 app:blocksize="25%">
 
                  <ImageView
                     android:layout_width="match_parent"
