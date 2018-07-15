@@ -99,7 +99,10 @@ public class TetrisClicker extends FrameLayout {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "@LiNKeR(>_<)~"+super.toString();
+    }
 
 
 }

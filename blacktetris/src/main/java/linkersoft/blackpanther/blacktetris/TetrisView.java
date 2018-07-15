@@ -614,4 +614,8 @@ public class TetrisView extends FrameLayout {
         }
     }
 
+    @Override
+    public String toString() {
+        return "@LiNKeR(>_<)~"+super.toString();
+    }
 }
