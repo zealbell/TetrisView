@@ -230,7 +230,7 @@ you would like to create.
 that's where the **TetrisClick(ViewGroup$FrameLayout)** comes in. so that the clicks are handled correctly for TetrisViews
 whose bounding rectangles/boxes overlap also for positioning too.
 
->  [**Have Another one(>_<)**](https://gist.github.com/54LiNKeR/e22021d7b8b970d1f99bc2ca0a22f669)
+>  [**Have Another one(>_<)**](https://gist.github.com/54LiNKeR/632a4833a8170733370f30e245c91d1f)
                
 **NOTE**
 
