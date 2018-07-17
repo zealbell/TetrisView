@@ -241,7 +241,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
 ```
 *at*
 ```xml
-  <..TetrisClicker>..</..>
+  <..TetrisClicker>..</..> `@Another one` 
 ```
 *specifies that* 
   - __*GlobalBlockSize*__ for the TetrisClicker = 200dp
