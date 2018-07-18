@@ -255,7 +255,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
 ```
 *in any* `<..TetrisView>..</..>` [*@Another one(>_<)*](https://gist.github.com/54LiNKeR/632a4833a8170733370f30e245c91d1f)
 
-*above, specifies that* 
+*specifies that* 
    - __*blocksize*__ = 25% of 200dp(**TetrisClicker's GlobalBlockSize**),
    - __*MarginTop of the TetrisView*__ = 50% of 200dp(**50% of TetrisClicker's GlobalBlockSize**),
    - __*MarginLeft of the TetrisView*__ = 75% of 200dp(**75% of TetrisClicker's GlobalBlockSize**).
