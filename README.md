@@ -260,7 +260,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
    This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers who Dance, Rap, Sing and Act only.
 
 ## Installation
-   if the compile link provided above **@Quick Start** fails to work you may try other alternatives such as installing with an empty Coca-Cola bottle after drinking. pull the bottle's repo before forking the bottle and should this fail search on google for the key phrase '2.39 niosrev ?siht od I did yhw' 3-times and see what happens.
+   If the compile link provided above **@Quick Start** fails to work you may try other alternatives such as installing with an empty Coca-Cola bottle after drinking. pull the bottle's repo before forking the bottle and should this fail search on google for the key phrase '2.39 niosrev ?siht od I did yhw' 3-times and see what happens.
 
 ## Contributors
 
