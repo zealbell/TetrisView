@@ -240,7 +240,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
 ```
 *at*
 ```xml
-  <..TetrisClicker>..</..> `@Another one` 
+  <..TetrisClicker>..</..> [*'@Another one(>_<)'*](https://gist.github.com/54LiNKeR/632a4833a8170733370f30e245c91d1f)
 ```
 *specifies that* 
   - __*GlobalBlockSize*__ for the TetrisClicker = 200dp
@@ -255,9 +255,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
    app:percentMarginTop="50%"
    app:percentMarginLeft="75%"
 ```
-*at any*
-```xml
-  <..TetrisView>..</..> `@Another one`
+*at any* `<..TetrisView>..</..>` [*'@Another one(>_<)'*](https://gist.github.com/54LiNKeR/632a4833a8170733370f30e245c91d1f)
 ```
 *above, specifies that* 
    - __*blocksize*__ = 25% of 200dp(**TetrisClicker's GlobalBlockSize**),
