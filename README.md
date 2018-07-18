@@ -238,10 +238,8 @@ whose bounding rectangles/boxes overlap also for positioning too.
     app:percentWidth="100%"
     app:percentHeight="100%"
 ```
-*at*
-```xml
-  <..TetrisClicker>..</..> [*'@Another one(>_<)'*](https://gist.github.com/54LiNKeR/632a4833a8170733370f30e245c91d1f)
-```
+*in* `<..TetrisClicker>..</..>` [*@Another one(>_<)*](https://gist.github.com/54LiNKeR/632a4833a8170733370f30e245c91d1f)
+
 *specifies that* 
   - __*GlobalBlockSize*__ for the TetrisClicker = 200dp
   - __*Width of the TetrisClicker*__ = 100% of 200dp(**100% of GlobalBlockSize**),
@@ -255,7 +253,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
    app:percentMarginTop="50%"
    app:percentMarginLeft="75%"
 ```
-*at any* `<..TetrisView>..</..>` [*'@Another one(>_<)'*](https://gist.github.com/54LiNKeR/632a4833a8170733370f30e245c91d1f)
+*in any* `<..TetrisView>..</..>` [*@Another one(>_<)*](https://gist.github.com/54LiNKeR/632a4833a8170733370f30e245c91d1f)
 
 *above, specifies that* 
    - __*blocksize*__ = 25% of 200dp(**TetrisClicker's GlobalBlockSize**),
