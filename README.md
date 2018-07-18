@@ -12,7 +12,7 @@ This Library consists of two Major views:
        - a simple example is a TetrisView with a single view such as an imageview,
        - a composite example is  a TetrisView with a single framelayout containing an imageview and a textview
                                     
-  2. **TetrisClick(ViewGroup$FrameLayout)** which can contain TetrisView kids/children and at the same time
+  2. **TetrisClick(ViewGroup$FrameLayout)** which can contain TetrisView kids/children at the same time
                                         and handles click listeners according to the shape of each TetrisView-shape rather
                                         than by its default bounding box/rectangle.
 > Also - Each TetrisView is made up of blocks which have equal dimensions.  
