@@ -30,7 +30,7 @@ This Library consists of two Major views:
    feel free to twitch the examples as much as possible to your taste in order to better understand
    how the **API** works. Here is a simple TetrisView containing an imageview in an horizontal manner
 
-![Demo](shots/simple-tetris.png)
+![simple-tetris](shots/simple-tetris.png)
 
 ```xml
     <linkersoft.blackpanther.blacktetris.TetrisView
@@ -141,7 +141,7 @@ This Library consists of two Major views:
         super.onCreate(savedInstanceState);
         setContentView(R.layout.TonyStark);
         TetrisView blackpanther = (TetrisView) findViewById(R.id.Tchalla);
-        blackpanther.resetTetris(pMarginLeft, pMarginTop, paddDistortion, tetris, blocksizes, tradius);
+        blackpanther.resetTetris(pMarginLeft, pMarginTop, paddDistortion, tetris, blocksizes, radius);
     }
 }
 ```
@@ -150,7 +150,7 @@ This Library consists of two Major views:
  **1. Complex Shapes**
 Here is a complex shape TetrisView containing an imageview
 
-![Demo](shots/complex-shape-tetris0.png)
+![complex-shape-tetris0](shots/complex-shape-tetris0.png)
 
 ```xml
           <linkersoft.blackpanther.blacktetris.TetrisView
@@ -182,7 +182,7 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
 
  - Here is Another one
 
-![Demo](shots/complex-shape-tetris1.png)
+![complex-shape-tetris1](shots/complex-shape-tetris1.png)
 ```xml
     <linkersoft.blackpanther.blacktetris.TetrisView
         android:layout_width="wrap_content"
@@ -205,14 +205,14 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
 ```
  > Another one
 
-![Demo](shots/complex-shape-tetris2.png)
+![complex-shape-tetris2](shots/complex-shape-tetris2.png)
 
 ```xml
   app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"
 ```
  > Another one
 
-![Demo](shots/complex-shape-tetris3.png)
+![complex-shape-tetris3](shots/complex-shape-tetris3.png)
 
 ```xml
    app:tetris="[horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0"
@@ -224,7 +224,7 @@ you would like to create.
  **2. Complex Arrangements and Shapes**
         In situations you really want to stack up your TetrisViews like a real TetrisLock as per the way the Game is aimed at locking/plugging the right objects into one another correctly. I mean something like this:
 
-![Demo](shots/complex-arrangement-tetris.png)
+![complex-arrangement-tetris](shots/complex-arrangement-tetris.png)
 
 that's where the **TetrisClick(ViewGroup$FrameLayout)** comes in. so that the clicks are handled correctly for TetrisViews
 whose bounding rectangles/boxes overlap also for positioning too.
