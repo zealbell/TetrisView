@@ -208,7 +208,7 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
 ![complex-shape-tetris2](shots/complex-shape-tetris2.png)
 
 `app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"`
- > Another one
+ > Another one(*_*)
 
 ![complex-shape-tetris3](shots/complex-shape-tetris3.png)
 
@@ -225,7 +225,7 @@ you would like to create.
 that's where the **TetrisClick(ViewGroup$FrameLayout)** comes in. so that the clicks are handled correctly for TetrisViews
 whose bounding rectangles/boxes overlap also for positioning too.
 
->  [**Have Another one(>_<)**](https://gist.github.com/54LiNKeR/632a4833a8170733370f30e245c91d1f)
+> `please` [**Have Another one(>_<)**](https://gist.github.com/54LiNKeR/632a4833a8170733370f30e245c91d1f)
                
 **NOTE**
 
