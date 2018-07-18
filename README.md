@@ -207,16 +207,12 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
 
 ![complex-shape-tetris2](shots/complex-shape-tetris2.png)
 
-```xml
-  app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"
-```
+`app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"`
  > Another one
 
 ![complex-shape-tetris3](shots/complex-shape-tetris3.png)
 
-```xml
-   app:tetris="[horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0"
-```
+`app:tetris="[horz-tetris:2,2,-2,2]1#2~[vert-tetris:2,2,2,2]2#1~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]3#0"`
 
 Ok so enough with DJ-Khaleding __*Another One*__, basically you get the idea. You are in charge of what tetrisables 
 you would like to create.
