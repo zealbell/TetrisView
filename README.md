@@ -109,13 +109,13 @@ This Library consists of two Major views:
    - **tetris** is vertical and has a height of **2x25%**[*block-size* x (p.o.sw)] = **50%**,
    - **tetris** has topMargin in terms of *block-size* equal-to **0**,
    - **tetris** is further padded by **4dp**,**2dp**,**2dp** and **2dp** (left,top,bottom,right).
-   *also*
+   *similarly*
 ```xml
      app:radius="8dp"
      app:tetris="[vert-tetris:0,0,2,2]2#3"
      app:blocksize="25dp"
 ```
-  *above,implies*
+  *implies*
    - **tetris** has a round edged curve of radius 8dp,
    - **tetris** is vertical and has a height of **25dp**[*block-size*],
    - **tetris** has topMargin in terms of *block-size* equal-to **3x25dp** = **75dp**,
