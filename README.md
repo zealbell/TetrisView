@@ -21,7 +21,7 @@ This Library consists of two Major views:
 
 ```xml
    dependencies {
-      compile 'com.github.54LiNKeR:TetrisView:1.2.3.4'
+      compile 'com.github.54LiNKeR:TetrisView:1.2.3.4.6'
    }
 ```
 
