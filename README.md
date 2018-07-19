@@ -208,7 +208,7 @@ as a single shape for the TetrisView i.e. the example above is made up of a __*h
 ![complex-shape-tetris2](shots/complex-shape-tetris2.png)
 
 `app:tetris="[horz-tetris:2,2,-2,2]1#1~[vert-tetris:2,2,2,2]2#0~[horz-tetris:-2,2,2,2]1#1~[vert-tetris:-2,2,2,2]2#0"`
- > Another one(*_*)
+ > Another one <small>(*_*)</small>
 
 ![complex-shape-tetris3](shots/complex-shape-tetris3.png)
 
