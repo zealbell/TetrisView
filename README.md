@@ -28,7 +28,7 @@ This Library consists of two Major views:
 ```
 
 ### Code Example
-   **Spoiler-Alert**: You don't need to read through except you encounter problems testing. also
+   **Spoiler-Alert**: You don't want to read through except you encounter problems testing(...trust me you really don't want to read most especially the license!!!). also
    feel free to twitch the examples as much as possible to your taste in order to better understand
    how the **API** works. Here is a simple TetrisView containing an imageview in an horizontal manner
 
