@@ -309,3 +309,5 @@ OF THIS LIBRARY IS NOT SO STUPID BUT JUST A LITTLE BIT DUMB.
 ```
 
 > **!!!!!!!!!!!!!!!!!!!!!!!!!!!!Another one!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
+
+ ![LiNKeR](https://github.com/54LiNKeR/54LiNKeR.github.io/blob/master/shots/zealbell7.png)
