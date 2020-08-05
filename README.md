@@ -259,10 +259,10 @@ whose bounding rectangles/boxes overlap also for positioning too.
    - __*MarginLeft of the TetrisView*__ = 75% of 200dp(**75% of TetrisClicker's GlobalBlockSize**).
 
 ## Motivation
-   This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers who Dance, Rap, Sing and Act only.
+   This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers out there who only kept grinding and doing their thing.
 
 ## Installation
-   If the compile link provided above __*@Quick Start*__ fails to work you may try other alternatives such as installing with an empty Coca-Cola bottle after drinking. pull the bottle's repo before forking the bottle and should this fail search on google for the key phrase '2.39 niosrev ?siht od I did yhw' 3-times and see what happens.
+   If the compile link provided above __*@Quick Start*__ fails to work you may try other alternatives such as installing with an empty Coca-Cola bottle after drinking. pull the bottle's repo or oper before forking the bottle and should this fail search on google for the key phrase '2.39 niosrev ?siht od I did yhw' 3-times and see what happens.
 
 ## Contributors
 
@@ -290,7 +290,7 @@ Copyright (c) 2044 MAC-44 OFAP C.V.S RPL SPARK ETL REVISION BUILD 45.34BL
 
 Permission is granted and free as Fork, to any one stealing and obtaining a copy
 of this software and associated documentation files (the "Softworn"), to deal
-in the Software without agitations and hesitations, including with 2-chains on the rights
+in the Software without aggressions, agitations, hesitations, including with 2-chains on the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Sh*t, and to permit any Trump persons to whom the Softworn is
 furnished and addressed to do so, subject to the following conditions:
