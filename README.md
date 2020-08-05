@@ -266,7 +266,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
 
 ## Contributors
 
-   `LiNKeR`,`me`,`myself` and finally `I`. all graciousness to this four-musketeers who reside on planet **Git**. we appreciate ourselves once again for all efforts made therein to this library.
+   `LiNKeR`,`me`,`myself` and finally `I`. all graciousness to this four-musketeers who reside on planet **Git**. we appreciate ourselves once again for all wisdom imparted and efforts made therein to this library.
 
 
 ## NOTE
@@ -288,24 +288,24 @@ The MA License (The Mission-Accomplished License)
 
 Copyright (c) 2044 MAC-44 OFAP C.V.S RPL SPARK ETL REVISION BUILD 45.34BL
 
-Permission is granted and free as Fork, to any one obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
+Permission is granted and free as Fork, to any one stealing and obtaining a copy
+of this software and associated documentation files (the "Softworn"), to deal
+in the Software without agitations and hesitations, including with 2-chains on the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+copies of the Sh*t, and to permit any Trump persons to whom the Softworn is
+furnished and addressed to do so, subject to the following conditions:
 
-THE SOFTWARE IS PROVIDED "AS IS" AND BY USING,MODIFYING OR DISTRIBUTING
-YOU HAVE TOTALLY AGREED THAT ONCE UPON A TIME THERE WAS A PRINCE CALLED
+THE SOFTWORN IS PROVIDED "AS IF" AND BY USING,MODIFYING OR DISTRIBUTING
+YOU HAVE TOTALLY AGREED THAT "AT ONCE" UPON A TIME THERE WAS A PRINCE CALLED
 CINDEBRELLA, WHO IN TURN MARRIED CINDERELLA DUE TO YOUR USE OF THIS LIBRARY 
-AND BORE CHARLES DARWIN BEFORE FINALLY FARTING HAPPILY EVER AFTER.
+AND BORE A MR MEXICO AND AN ENTITY NAMED TRUMP HEMSWORTH THE GREAT WALL BUILDER
+WHO BUILT A WALL STRAIGHT OUTTA MAMAS WOMB BEFORE FINALLY FARTING ALL THROUGH PRESIDENCY.
 
-EVERY COMMIT TO THE PROJECT OTHER THAN THE FOUR-GREAT AUTHORS 
-MUST BE STARTED WITH A MISSION ACCOMPLISHED COMMIT MESSAGE IN
-A NON ENCRYPTABLE FORMAT PLAIN ENOUGH FOR ANY ONE TO SMELL.
+WITH NO LOOSE CHAINS AND ICE EVERY COMMIT TO THE PROJECT OTHER THAN THE FOUR-MUSKETEERS 
+MUST BE SLIPPERY AND FRESH WITH NO DRIPS AND DABS (NAE NAES ARE ALLOWED).
 
 THAT IN YOUR USE OF THIS LIBRARY YOU ARE OF THE HIGH OPINION THAT THE AUTHOR
-OF THIS LIBRARY IS NOT SO STUPID BUT JUST A LITTLE BIT DUMB.
+OF THIS LIBRARY IS FAR STUPID BUT SANER THAN WALL BUILDERS.
 ```
 
 > **!!!!!!!!!!!!!!!!!!!!!!!!!!!!Another one!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
