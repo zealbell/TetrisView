@@ -6,7 +6,7 @@ TetrisView
 =============
 A wildly creative UI that lets you snap simple or compound views into any Tetris-inspired shape—with a magical touch of smooth curves. Just like the game, but with more layout logic and less panic
 
-**Spoiler-Alert**: ⚠️ For your mental well-being, reading the license section below is strongly discouraged.
+⚠️ For your mental well-being, reading the license section below is strongly discouraged.
 Side effects include shock, regret, and a strong sense of “I warned you.”
 
 ## Synopsis
