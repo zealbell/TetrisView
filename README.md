@@ -293,14 +293,14 @@ Permission is granted and free as Fork, to any one stealing and obtaining a copy
 of this software and associated documentation files (the "Softloot"), to deal
 in the Software without aggressions, agitations, hesitations, including with 
 2-Chainz on the rights to use, copy, modify, merge, publish, distribute, sublicense, 
-and/or sell copies of the Sheet, and to permit any Trump persons to whom the Softworn is
+and/or sell copies of the Sheet, and to permit any Trump persons to whom the Softloot is
 furnished and addressed to do so, subject to the following conditions:
 
 THE SOFTLOOT IS PROVIDED "AS IF" AND BY USING,MODIFYING OR DISTRIBUTING
-YOU HAVE TOTALLY AGREED THAT "AT ONCE" UPON A TIME THERE WAS A PRINCE CALLED
-CINDER-BRELLA, WHO IN TURN MARRIED CINDER-RELLA DUE TO YOUR USE OF THIS LIBRARY 
-AND BORE A MR MEXICO AND AN ENTITY NAMED TRUMP-HEMSWORTH-THE-GREAT-WALL-BUILDER-
-WHO-BUILT-A-WALL-STRAIGHT-OUTTA-MAMAS-WOMB-BEFORE-FINALLY-FARTING-ALL-THROUGH PRESIDENCY.
+YOU HAVE TOTALLY AGREED THAT "AT ONCE", UPON A TIME THERE WAS A PRINCE CALLED
+CINDER-BRELLA, HEIR TO THE UMBRELLA KINGDOM, WHO FELL FOR CINDER-RELLA, PRINCESS OF LOST PACKAGES, DURING A MIDNIGHT `npm run deploy` DUE TO YOUR USE OF THIS LIBRARY 
+AND TOGETHER THEY BORE A MR MEXICO AND AN ENTITY NAMED TRUMP-HEMSWORTH-THE-GREAT-BUILDER-
+WHO-BUILT-A-WALL-STRAIGHT-OUTTA-MAMAS-WOMB-BEFORE-SHOUTING-TREMEDOUS-ALL-THROUGH-PRESIDENCY.
 
 WITH NO LOOSE CHAINS AND ICE, EVERY COMMIT TO THE PROJECT OTHER THAN FROM THE FOUR-MUSKETEERS 
 MUST BE SLIPPERY AND FRESH, WITH NO DRIPS AND DABS (NAE NAES ARE ALLOWED).
