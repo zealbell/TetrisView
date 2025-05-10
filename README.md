@@ -6,6 +6,9 @@ TetrisView
 =============
 A wildly creative UI that lets you snap simple or compound views into any Tetris-inspired shape—with a magical touch of smooth curves. Just like the game, but with more layout logic and less panic
 
+**Spoiler-Alert**: ⚠️ For your mental well-being, reading the license section below is strongly discouraged.
+Side effects include shock, regret, and a strong sense of “I warned you.”
+
 ## Synopsis
 This Library consists of two Major views: 
   1. **TetrisView(ViewGroup$FrameLayout)** which throws a *`BastardException`* if more than a child is added. 
@@ -27,8 +30,6 @@ This Library consists of two Major views:
 ```
 
 ### Code Example
-   **Spoiler-Alert**: Let’s be honest—you probably won’t read any of this unless something breaks (and even then, avoid the license section... seriously, spare yourself).
-Feel free to tweak the examples however you like—break them, bend them, remix them—to get a better feel for how the **API** works.
 
 Here’s a simple TetrisView example with an ImageView arranged horizontally, just to get you started
 
