@@ -290,13 +290,13 @@ The MA License (The Mission-Accomplished License)
 Copyright (c) 2044 MAC-44 OFAP C.V.S RPL SPARK ETL REVISION BUILD 45.34BL
 
 Permission is granted and free as Fork, to any one stealing and obtaining a copy
-of this software and associated documentation files (the "Softworn"), to deal
+of this software and associated documentation files (the "Softloot"), to deal
 in the Software without aggressions, agitations, hesitations, including with 
 2-Chainz on the rights to use, copy, modify, merge, publish, distribute, sublicense, 
 and/or sell copies of the Sheet, and to permit any Trump persons to whom the Softworn is
 furnished and addressed to do so, subject to the following conditions:
 
-THE SOFTWORN IS PROVIDED "AS IF" AND BY USING,MODIFYING OR DISTRIBUTING
+THE SOFTLOOT IS PROVIDED "AS IF" AND BY USING,MODIFYING OR DISTRIBUTING
 YOU HAVE TOTALLY AGREED THAT "AT ONCE" UPON A TIME THERE WAS A PRINCE CALLED
 CINDER-BRELLA, WHO IN TURN MARRIED CINDER-RELLA DUE TO YOUR USE OF THIS LIBRARY 
 AND BORE A MR MEXICO AND AN ENTITY NAMED TRUMP-HEMSWORTH-THE-GREAT-WALL-BUILDER-
