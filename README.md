@@ -4,8 +4,7 @@
 
 TetrisView
 =============
-A very creative UI, that displays a simple/compound view in any tetris-shape adding some magic with a tasteful curve all around.
-and as the name implies you can construct your views to be arranged just like in any tetris game.
+A wildly creative UI that lets you snap simple or compound views into any Tetris-inspired shape—with a magical touch of smooth curves. Just like the game, but with more layout logic and less panic
 
 ## Synopsis
 This Library consists of two Major views: 
