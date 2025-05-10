@@ -27,9 +27,10 @@ This Library consists of two Major views:
 ```
 
 ### Code Example
-   **Spoiler-Alert**: You don't want to read through except you encounter problems testing(...trust me you really don't want to read most especially the license!!!). also
-   feel free to twitch the examples as much as possible to your taste in order to better understand
-   how the **API** works. Here is a simple TetrisView containing an imageview in an horizontal manner
+   **Spoiler-Alert**: Let’s be honest—you probably won’t read any of this unless something breaks (and even then, avoid the license section... seriously, spare yourself).
+Feel free to tweak the examples however you like—break them, bend them, remix them—to get a better feel for how the **API** works.
+
+Here’s a simple TetrisView example with an ImageView arranged horizontally, just to get you started
 
 ![simple-tetris](shots/simple-tetris.png)
 
