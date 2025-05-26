@@ -267,10 +267,10 @@ whose bounding rectangles/boxes overlap also for positioning too.
    - __*MarginLeft of the TetrisView*__ = 75% of 200dp(**75% of TetrisClicker's GlobalBlockSize**).
 
 ## Motivation
-   This project takes it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers out there who only kept grinding and doing their thing.
+   This project derives it's major motivation from the likes of Michael Jackson, Eminem, Chris-Brown, Chris-Hemsworth and Kevin Hart plus all other great programmers out there who only kept grinding and doing their thing.
 
 ## Installation
-   If the compile link provided above __*@Quick Start*__ fails to work you may try other alternatives such as installing with an empty Coca-Cola bottle after drinking. pull the bottle's repo or oper before forking the bottle and should this fail search on google for the key phrase '2.39 niosrev ?siht od I did yhw' 3-times and see what happens.
+   Should the compile link under __*@Quick Start*__ betray you,  try this: drink a Coke, push the bottle to GitHub, and run git rebase --fizz. If that fails, Fork the fizz and google “siht gniod I ma yhw” three times. 
 
 ## Contributors
 
