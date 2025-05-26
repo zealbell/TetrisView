@@ -6,8 +6,15 @@ TetrisView
 =============
 A wildly creative UI that lets you snap simple or compound views into any Tetris-inspired shape—with a magical touch of smooth curves. Just like the game, but with more layout logic and less panic
 
-> ⚠️ For your mental well-being, reading the license section below is strongly discouraged.
-Side effects include shock, regret, and a strong sense of “I warned you.”
+> ⚠️ Perusal of the license section is not recommended.
+You came for code, now you’re legally offended.
+Read too far, now you feelin' distressed.
+You blinked once, now you're deep in the mess.
+Tangled in stress, you're losing the quest.
+Another one —Yet you played yourself.
+But still, we the best. #Bless up! 
+
+
 
 ## Synopsis
 This Library consists of two Major views: 
