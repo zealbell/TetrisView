@@ -291,32 +291,6 @@ whose bounding rectangles/boxes overlap also for positioning too.
 
 ### License
 
-```
-The MA License (The Mission-Accomplished License)
-
-Copyright (c) 2044 MAC-44 OFAP C.V.S RPL SPARK ETL REVISION BUILD 45.34BL
-
-Permission is granted and free as Fork, to any one stealing and obtaining a copy
-of this software and associated documentation files (the "Softloot"), to deal
-in the Software without aggressions, agitations, hesitations, including with 
-2-Chainz on the rights to use, copy, modify, merge, publish, distribute, sublicense, 
-and/or sell copies of the Sheet, and to permit any Trump persons to whom the Softloot is
-furnished and addressed to do so, subject to the following conditions:
-
-THE SOFTLOOT IS PROVIDED "AS IF" AND BY USING,MODIFYING OR DISTRIBUTING
-YOU HAVE TOTALLY AGREED THAT "AT ONCE", UPON A TIME THERE WAS A PRINCE CALLED
-CINDER-BRELLA, HEIR TO THE UMBRELLA KINGDOM, WHO FELL FOR CINDER-RELLA, PRINCESS OF LOST
-PACKAGES, DURING A MIDNIGHT `npm run deploy` DUE TO YOUR USE OF THIS LIBRARY AND TOGETHER
-THEY BORE AN ENTITY NAMED TRUMP-THE-GREAT-BUILDER-WHO-BUILT-A-WALL-STRAIGHT-OUTTA-MAMAS-
-WOMB-BEFORE-SHOUTING-TREMEDOUS-ALL-THROUGH-PRESIDENCY.
-
-WITH NO LOOSE CHAINS AND ICE, EVERY COMMIT TO THE PROJECT OTHER THAN FROM THE FOUR-MUSKETEERS 
-MUST BE SLIPPERY AND FRESH, WITH NO DRIPS AND DABS (NAE NAES ARE ALLOWED).
-
-INSTALLING THIS LIBRARY IMPLIES CONSENT THAT YOU TRUST ITS LOGIC MORE THAN THE ARCHITECTURAL
-JUDGMENT OF WALL-BUILDERS IN GOVERNMENT POSITIONS. THAT YOU FIND ITS CODEBASE SUFFICIENTLY
-STABLE — AND AT LEAST MORE JUSTIFIABLE THAN MULTIBILLION-DOLLAR FENCES.
-
 
 ```
 
