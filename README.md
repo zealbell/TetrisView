@@ -267,7 +267,7 @@ whose bounding rectangles/boxes overlap also for positioning too.
    - __*MarginLeft of the TetrisView*__ = 75% of 200dp(**75% of TetrisClicker's GlobalBlockSize**).
 
 ## Motivation
- This project draws its major motivation from coders like DJ Khaled, Michael Jackson, Eminem, Chris Brown, Chris Hemsworth, Kevin Hart—and all the silent keyboard ninjas out there who never gave up. The ones who kept grinding, kept building, kept doing their thing. This one’s for you. Another build. Another bug. Another one.
+ This project draws its major motivation from coders like DJ Khaled, Michael Jackson, Eminem, Chris Brown, Chris Hemsworth, Kevin Hart—and all the silent keyboard ninjas out there who never gave up. The ones who kept grinding, kept building, kept doing their thing. This one’s for you. Another build. Another bug. *Another one*.
 
 ## Installation
 Should the compile link under __*@Quick Start*__ fail, don’t panic. 
@@ -296,7 +296,7 @@ sudo ./summon.sh God Did
 If nothing happens?
 
 > *It breaks my heart* to say this...
-> But *you played yourself*.
+> But *you played yourself*. So #Bless up! 
 
 
 ## Contributors
