@@ -270,27 +270,22 @@ whose bounding rectangles/boxes overlap also for positioning too.
  This project draws its major motivation from coders like DJ Khaled, Michael Jackson, Eminem, Chris Brown, Chris Hemsworth, Kevin Hart—and all the silent keyboard ninjas out there who never gave up. The ones who kept grinding, kept building, kept doing their thing. This one’s for you. Another build. Another bug. Another one.
 
 ## Installation
-   Should the compile link under __*@Quick Start*__ betray you,  try this: drink a Coke, push the bottle to GitHub, and run git rebase --fizz. If that fails, Fork the fizz and google “siht gniod I ma yhw” three times. 
+Should the compile link under __*@Quick Start*__ fail, don’t panic. 
 
-That’s already solid, but let’s make it hit harder with rhythm, timing, and Khaled-style quotables while keeping the tech absurdity intact.
-
----
-
-### 🔥 **Refined Version – Major Key Install Guide**
-
-Should the compile link under **@Quick Start** fail, don’t panic.
-
-> *“They don’t want you to succeed.”*
+> *They don’t want you to succeed.*
 > But guess what?
 > *They played themselves.*
 
+**Major Key Alert 🔑**
+> *You either win with us, or watch us win*
+
 So here’s what you do:
 
-1. Locate a vintage USB—bonus points if it still has **LimeWire** and emotional baggage.
+1. Locate a vintage USB—bonus points if its *another one*.
 2. Blow on it like it’s a **Sega cartridge from ‘96**.
 3. Whisper into a retired RAM stick:
 
-> *“They didn’t believe in us…”*
+> *They didn’t believe in us…*
 
 4. Then, in **bash**, channel your inner greatness:
 
@@ -300,8 +295,8 @@ sudo ./summon.sh God Did
 
 If nothing happens?
 
-> *“It breaks my heart”* to say this...
-> But **you played yourself.**
+> *It breaks my heart* to say this...
+> But *you played yourself*.
 
 
 ## Contributors
